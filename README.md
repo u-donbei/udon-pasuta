@@ -13,7 +13,15 @@
 【エンディング数】1
 【推奨年齢　　　】全年齢
 【種別　　　　　】フリーウェア
-【制作ソフト　　】IntelliJ IDEA Community Edition / Cakewalk by BandLab / Resource Hacker / GraphicsGale / Launch4j / ペイント3D / Visual Studio Code / WPS Writer / Inno Setup Compiler
+【制作ソフト　　】IntelliJ IDEA Community Edition
+/ Cakewalk by BandLab
+/ Resource Hacker
+/ GraphicsGale
+/ Launch4j
+/ ペイント3D
+/ Visual Studio Code
+/ WPS Writer
+/ Inno Setup Compiler
 【使用ライブラリ】bin/app/libフォルダをご覧ください
 【ゲーム制作者　】ウードン
 【お問い合わせ　】yu_w_main@yahoo.co.jp
