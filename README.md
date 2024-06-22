@@ -25,6 +25,7 @@
 【使用ライブラリ】bin/app/libフォルダをご覧ください<br>
 【ゲーム制作者　】ウードン<br>
 【お問い合わせ　】yu_w_main@yahoo.co.jp<br>
+【ソースコード  】<a href="https://github.com/u-donbei/udon_pasuta-Develop">https://github.com/u-donbei/udon_pasuta-Develop</a>
 
 このゲームはフィクションです。<br>
 実在の人物、団体、事件等とは一切関係ありません。<br>
