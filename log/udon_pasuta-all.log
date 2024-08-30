@@ -1,0 +1,158 @@
+2024/08/29 13:45:41.90 j.u.u.Main                     INFO  [main                                              ] - Application Start.
+2024/08/29 13:45:41.90 j.u.u.Main                     INFO  [main                                              ] - Setting develop environment.
+2024/08/29 13:45:41.90 j.u.u.Main                     INFO  [main                                              ] - Using develop environment.
+2024/08/29 13:45:41.92 j.u.u.Main                     DEBUG [JavaFX Application Thread                         ] - debug test
+2024/08/29 13:45:41.92 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Loading FXML.
+2024/08/29 13:45:43.14 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Waiting start.
+2024/08/29 13:45:43.15 j.u.u.m.AppStartManager        DEBUG [JavaFX Application Thread                         ] - AppStartManager.waitStart:mainWindow.getTitle()=うどんべいのパスタ退治
+2024/08/29 13:45:49.97 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - GameMap build success.
+2024/08/29 13:45:50.39 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - Draw success.
+2024/08/29 13:45:55.53 j.u.u.Main                     INFO  [main                                              ] - Application Exit.
+2024/08/29 13:57:31.29 j.u.u.Main                     INFO  [main                                              ] - Application Start.
+2024/08/29 13:57:31.30 j.u.u.Main                     INFO  [main                                              ] - Setting develop environment.
+2024/08/29 13:57:31.30 j.u.u.Main                     INFO  [main                                              ] - Using develop environment.
+2024/08/29 13:57:31.32 j.u.u.Main                     DEBUG [JavaFX Application Thread                         ] - debug test
+2024/08/29 13:57:31.32 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Loading FXML.
+2024/08/29 13:57:32.43 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Waiting start.
+2024/08/29 13:57:32.44 j.u.u.m.AppStartManager        DEBUG [JavaFX Application Thread                         ] - AppStartManager.waitStart:mainWindow.getTitle()=うどんべいのパスタ退治
+2024/08/29 13:57:38.08 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - GameMap build success.
+2024/08/29 13:57:38.46 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - Draw success.
+2024/08/29 13:57:51.40 j.u.u.Main                     INFO  [main                                              ] - Application Exit.
+2024/08/29 13:58:04.21 j.u.u.Main                     INFO  [main                                              ] - Application Start.
+2024/08/29 13:58:04.21 j.u.u.Main                     INFO  [main                                              ] - Setting develop environment.
+2024/08/29 13:58:04.21 j.u.u.Main                     INFO  [main                                              ] - Using develop environment.
+2024/08/29 13:58:04.24 j.u.u.Main                     DEBUG [JavaFX Application Thread                         ] - debug test
+2024/08/29 13:58:04.24 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Loading FXML.
+2024/08/29 13:58:05.36 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Waiting start.
+2024/08/29 13:58:05.37 j.u.u.m.AppStartManager        DEBUG [JavaFX Application Thread                         ] - AppStartManager.waitStart:mainWindow.getTitle()=うどんべいのパスタ退治
+2024/08/29 13:58:10.57 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - GameMap build success.
+2024/08/29 13:58:10.97 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - Draw success.
+2024/08/29 13:58:16.92 j.u.u.Main                     INFO  [main                                              ] - Application Exit.
+2024/08/29 13:58:29.03 j.u.u.Main                     INFO  [main                                              ] - Application Start.
+2024/08/29 13:58:29.04 j.u.u.Main                     INFO  [main                                              ] - Setting develop environment.
+2024/08/29 13:58:29.04 j.u.u.Main                     INFO  [main                                              ] - Using develop environment.
+2024/08/29 13:58:29.06 j.u.u.Main                     DEBUG [JavaFX Application Thread                         ] - debug test
+2024/08/29 13:58:29.06 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Loading FXML.
+2024/08/29 13:58:30.16 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Waiting start.
+2024/08/29 13:58:30.17 j.u.u.m.AppStartManager        DEBUG [JavaFX Application Thread                         ] - AppStartManager.waitStart:mainWindow.getTitle()=うどんべいのパスタ退治
+2024/08/29 13:58:38.69 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - GameMap build success.
+2024/08/29 13:58:39.06 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - Draw success.
+2024/08/29 13:58:46.59 j.u.u.Main                     INFO  [main                                              ] - Application Exit.
+2024/08/29 14:00:10.67 j.u.u.Main                     INFO  [main                                              ] - Application Start.
+2024/08/29 14:00:10.67 j.u.u.Main                     INFO  [main                                              ] - Setting develop environment.
+2024/08/29 14:00:10.67 j.u.u.Main                     INFO  [main                                              ] - Using develop environment.
+2024/08/29 14:00:10.70 j.u.u.Main                     DEBUG [JavaFX Application Thread                         ] - debug test
+2024/08/29 14:00:10.70 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Loading FXML.
+2024/08/29 14:00:11.79 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Waiting start.
+2024/08/29 14:00:11.79 j.u.u.m.AppStartManager        DEBUG [JavaFX Application Thread                         ] - AppStartManager.waitStart:mainWindow.getTitle()=うどんべいのパスタ退治
+2024/08/29 14:00:16.27 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - GameMap build success.
+2024/08/29 14:00:16.64 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - Draw success.
+2024/08/29 14:00:21.76 j.u.u.Main                     INFO  [main                                              ] - Application Exit.
+2024/08/29 14:14:06.75 j.u.u.Main                     INFO  [main                                              ] - Application Start.
+2024/08/29 14:14:06.75 j.u.u.Main                     INFO  [main                                              ] - Setting develop environment.
+2024/08/29 14:14:06.75 j.u.u.Main                     INFO  [main                                              ] - Using develop environment.
+2024/08/29 14:14:06.78 j.u.u.Main                     DEBUG [JavaFX Application Thread                         ] - debug test
+2024/08/29 14:14:06.78 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Loading FXML.
+2024/08/29 14:14:07.96 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Waiting start.
+2024/08/29 14:14:07.96 j.u.u.m.AppStartManager        DEBUG [JavaFX Application Thread                         ] - AppStartManager.waitStart:mainWindow.getTitle()=うどんべいのパスタ退治
+2024/08/29 14:14:13.78 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - GameMap build success.
+2024/08/29 14:14:14.17 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - Draw success.
+2024/08/29 14:14:55.37 j.u.u.Main                     INFO  [main                                              ] - Application Exit.
+2024/08/29 14:16:08.81 j.u.u.Main                     INFO  [main                                              ] - Application Start.
+2024/08/29 14:16:08.81 j.u.u.Main                     INFO  [main                                              ] - Setting develop environment.
+2024/08/29 14:16:08.81 j.u.u.Main                     INFO  [main                                              ] - Using develop environment.
+2024/08/29 14:16:08.84 j.u.u.Main                     DEBUG [JavaFX Application Thread                         ] - debug test
+2024/08/29 14:16:08.84 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Loading FXML.
+2024/08/29 14:16:10.04 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Waiting start.
+2024/08/29 14:16:10.05 j.u.u.m.AppStartManager        DEBUG [JavaFX Application Thread                         ] - AppStartManager.waitStart:mainWindow.getTitle()=うどんべいのパスタ退治
+2024/08/29 14:16:17.94 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - GameMap build success.
+2024/08/29 14:16:18.48 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - Draw success.
+2024/08/29 14:16:22.30 j.u.u.Main                     INFO  [main                                              ] - Application Exit.
+2024/08/29 14:17:27.18 j.u.u.Main                     INFO  [main                                              ] - Application Start.
+2024/08/29 14:17:27.18 j.u.u.Main                     INFO  [main                                              ] - Setting develop environment.
+2024/08/29 14:17:27.18 j.u.u.Main                     INFO  [main                                              ] - Using develop environment.
+2024/08/29 14:17:27.21 j.u.u.Main                     DEBUG [JavaFX Application Thread                         ] - debug test
+2024/08/29 14:17:27.22 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Loading FXML.
+2024/08/29 14:17:28.50 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Waiting start.
+2024/08/29 14:17:28.51 j.u.u.m.AppStartManager        DEBUG [JavaFX Application Thread                         ] - AppStartManager.waitStart:mainWindow.getTitle()=うどんべいのパスタ退治
+2024/08/29 14:17:59.71 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - GameMap build success.
+2024/08/29 14:18:00.54 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - Draw success.
+2024/08/29 14:18:06.35 j.u.u.Main                     INFO  [main                                              ] - Application Exit.
+2024/08/29 14:19:07.08 j.u.u.Main                     INFO  [main                                              ] - Application Start.
+2024/08/29 14:19:07.08 j.u.u.Main                     INFO  [main                                              ] - Setting develop environment.
+2024/08/29 14:19:07.08 j.u.u.Main                     INFO  [main                                              ] - Using develop environment.
+2024/08/29 14:19:07.12 j.u.u.Main                     DEBUG [JavaFX Application Thread                         ] - debug test
+2024/08/29 14:19:07.13 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Loading FXML.
+2024/08/29 14:19:08.52 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Waiting start.
+2024/08/29 14:19:08.53 j.u.u.m.AppStartManager        DEBUG [JavaFX Application Thread                         ] - AppStartManager.waitStart:mainWindow.getTitle()=うどんべいのパスタ退治
+2024/08/29 14:19:13.12 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - GameMap build success.
+2024/08/29 14:19:13.51 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - Draw success.
+2024/08/29 14:19:20.93 j.u.u.Main                     INFO  [main                                              ] - Application Exit.
+2024/08/29 14:28:03.97 j.u.u.Main                     INFO  [main                                              ] - Application Start.
+2024/08/29 14:28:03.97 j.u.u.Main                     INFO  [main                                              ] - Setting develop environment.
+2024/08/29 14:28:03.97 j.u.u.Main                     INFO  [main                                              ] - Using develop environment.
+2024/08/29 14:28:03.99 j.u.u.Main                     DEBUG [JavaFX Application Thread                         ] - debug test
+2024/08/29 14:28:03.99 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Loading FXML.
+2024/08/29 14:28:05.07 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Waiting start.
+2024/08/29 14:28:09.99 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - GameMap build success.
+2024/08/29 14:28:10.37 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - Draw success.
+2024/08/29 14:28:26.44 j.u.u.Main                     INFO  [main                                              ] - Application Exit.
+2024/08/29 14:29:29.95 j.u.u.Main                     INFO  [main                                              ] - Application Start.
+2024/08/29 14:29:29.96 j.u.u.Main                     INFO  [main                                              ] - Setting develop environment.
+2024/08/29 14:29:29.96 j.u.u.Main                     INFO  [main                                              ] - Using develop environment.
+2024/08/29 14:29:29.99 j.u.u.Main                     DEBUG [JavaFX Application Thread                         ] - debug test
+2024/08/29 14:29:29.99 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Loading FXML.
+2024/08/29 14:29:31.23 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Waiting start.
+2024/08/29 14:29:36.13 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - GameMap build success.
+2024/08/29 14:29:36.51 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - Draw success.
+2024/08/29 14:29:40.16 j.u.u.Main                     INFO  [main                                              ] - Application Exit.
+2024/08/29 14:30:05.24 j.u.u.Main                     INFO  [main                                              ] - Application Start.
+2024/08/29 14:30:05.25 j.u.u.Main                     INFO  [main                                              ] - Setting develop environment.
+2024/08/29 14:30:05.25 j.u.u.Main                     INFO  [main                                              ] - Using develop environment.
+2024/08/29 14:30:05.27 j.u.u.Main                     DEBUG [JavaFX Application Thread                         ] - debug test
+2024/08/29 14:30:05.27 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Loading FXML.
+2024/08/29 14:30:06.38 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Waiting start.
+2024/08/29 14:30:11.68 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - GameMap build success.
+2024/08/29 14:30:12.05 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - Draw success.
+2024/08/29 14:30:21.64 j.u.u.Main                     INFO  [main                                              ] - Application Exit.
+2024/08/29 14:31:41.08 j.u.u.Main                     INFO  [main                                              ] - Application Start.
+2024/08/29 14:31:41.09 j.u.u.Main                     INFO  [main                                              ] - Setting develop environment.
+2024/08/29 14:31:41.09 j.u.u.Main                     INFO  [main                                              ] - Using develop environment.
+2024/08/29 14:31:41.11 j.u.u.Main                     DEBUG [JavaFX Application Thread                         ] - debug test
+2024/08/29 14:31:41.11 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Loading FXML.
+2024/08/29 14:31:42.18 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Waiting start.
+2024/08/29 14:31:46.64 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - GameMap build success.
+2024/08/29 14:31:47.04 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - Draw success.
+2024/08/29 14:32:16.95 j.u.u.Main                     INFO  [main                                              ] - Application Exit.
+2024/08/29 14:32:43.24 j.u.u.Main                     INFO  [main                                              ] - Application Start.
+2024/08/29 14:32:43.24 j.u.u.Main                     INFO  [main                                              ] - Setting develop environment.
+2024/08/29 14:32:43.24 j.u.u.Main                     INFO  [main                                              ] - Using develop environment.
+2024/08/29 14:32:43.26 j.u.u.Main                     DEBUG [JavaFX Application Thread                         ] - debug test
+2024/08/29 14:32:43.26 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Loading FXML.
+2024/08/29 14:32:44.37 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Waiting start.
+2024/08/29 14:32:48.97 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - GameMap build success.
+2024/08/29 14:32:49.35 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - Draw success.
+2024/08/29 14:32:55.38 j.u.u.Main                     INFO  [main                                              ] - Application Exit.
+2024/08/29 17:13:05.07 j.u.u.Main                     INFO  [main                                              ] - Application Start.
+2024/08/29 17:13:05.08 j.u.u.Main                     INFO  [main                                              ] - Setting develop environment.
+2024/08/29 17:13:05.08 j.u.u.Main                     INFO  [main                                              ] - Using develop environment.
+2024/08/29 17:13:05.12 j.u.u.Main                     DEBUG [JavaFX Application Thread                         ] - debug test
+2024/08/29 17:13:05.12 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Loading FXML.
+2024/08/29 17:13:07.73 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Waiting start.
+2024/08/29 17:13:16.62 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - GameMap build success.
+2024/08/29 17:13:17.04 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - Draw success.
+2024/08/29 17:13:25.76 j.u.u.Main                     INFO  [main                                              ] - Application Exit.
+2024/08/29 17:14:52.23 j.u.u.Main                     INFO  [main                                              ] - Application Start.
+2024/08/29 17:14:52.23 j.u.u.Main                     INFO  [main                                              ] - Setting develop environment.
+2024/08/29 17:14:52.23 j.u.u.Main                     INFO  [main                                              ] - Using develop environment.
+2024/08/29 17:14:52.25 j.u.u.Main                     DEBUG [JavaFX Application Thread                         ] - debug test
+2024/08/29 17:14:52.25 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Loading FXML.
+2024/08/29 17:14:53.38 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Waiting start.
+2024/08/29 17:14:58.48 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - GameMap build success.
+2024/08/29 17:14:58.88 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - Draw success.
+2024/08/29 17:15:25.96 j.u.u.Main                     INFO  [main                                              ] - Application Exit.
+2024/08/29 17:18:21.66 j.u.u.Main                     INFO  [main                                              ] - Application Start.
+2024/08/29 17:18:21.66 j.u.u.Main                     INFO  [main                                              ] - Setting develop environment.
+2024/08/29 17:18:21.66 j.u.u.Main                     INFO  [main                                              ] - Using develop environment.
+2024/08/29 17:18:21.69 j.u.u.Main                     DEBUG [JavaFX Application Thread                         ] - debug test
+2024/08/29 17:18:21.69 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Loading FXML.

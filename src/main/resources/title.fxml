@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" stylesheets="@css/title.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jp.u_donbei.udon_pasuta.controller.TitleController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="BOTTOM_CENTER">
+         <children>
+            <Button fx:id="start" alignment="CENTER" mnemonicParsing="false" onAction="#handleStart" style="-fx-background-color: #ffffff00;" text="スタート" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Button>
+            <Button fx:id="setting" mnemonicParsing="false" onAction="#handleSetting" style="-fx-background-color: #ffffff00;" text="設定" textFill="WHITE">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Button>
+            <Button fx:id="exit" mnemonicParsing="false" onAction="#handleExit" style="-fx-background-color: #ffffff00;" text="終了" textFill="WHITE">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

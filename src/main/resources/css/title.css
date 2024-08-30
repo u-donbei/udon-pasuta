@@ -1,0 +1,12 @@
+.button:hover {
+    -fx-text-fill: #a7a7a7;
+}
+
+.button:armed{
+    -fx-text-fill: #606060;
+}
+
+.button{
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+}
