@@ -1,5 +1,6 @@
 package jp.u_donbei.udon_pasuta.object;
 
+import javafx.geometry.Bounds;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import lombok.Data;
@@ -15,6 +16,7 @@ public abstract class GameObject implements HasTexture {
 	private int x, y;
 	private Image image;
 	private transient ImageView view;
+	private boolean contactable;
 
 	/**
 	 * コンストラクタ。
@@ -36,5 +38,14 @@ public abstract class GameObject implements HasTexture {
 	public void updateView() {
 		view.setTranslateX(getX());
 		view.setTranslateY(getY());
+	}
+
+	/**
+	 * 対象のGameObjectに当たっている(1ピクセルでも重なっている)かどうか判定する
+	 */
+	public boolean isContact(GameObject target) {
+		Bounds bounds = getView().getBoundsInParent();
+		Bounds targetBounds = target.getView().getBoundsInParent();
+		return bounds.intersects(targetBounds);
 	}
 }

@@ -1,158 +1,178 @@
-2024/08/29 13:45:41.90 j.u.u.Main                     INFO  [main                                              ] - Application Start.
-2024/08/29 13:45:41.90 j.u.u.Main                     INFO  [main                                              ] - Setting develop environment.
-2024/08/29 13:45:41.90 j.u.u.Main                     INFO  [main                                              ] - Using develop environment.
-2024/08/29 13:45:41.92 j.u.u.Main                     DEBUG [JavaFX Application Thread                         ] - debug test
-2024/08/29 13:45:41.92 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Loading FXML.
-2024/08/29 13:45:43.14 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Waiting start.
-2024/08/29 13:45:43.15 j.u.u.m.AppStartManager        DEBUG [JavaFX Application Thread                         ] - AppStartManager.waitStart:mainWindow.getTitle()=うどんべいのパスタ退治
-2024/08/29 13:45:49.97 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - GameMap build success.
-2024/08/29 13:45:50.39 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - Draw success.
-2024/08/29 13:45:55.53 j.u.u.Main                     INFO  [main                                              ] - Application Exit.
-2024/08/29 13:57:31.29 j.u.u.Main                     INFO  [main                                              ] - Application Start.
-2024/08/29 13:57:31.30 j.u.u.Main                     INFO  [main                                              ] - Setting develop environment.
-2024/08/29 13:57:31.30 j.u.u.Main                     INFO  [main                                              ] - Using develop environment.
-2024/08/29 13:57:31.32 j.u.u.Main                     DEBUG [JavaFX Application Thread                         ] - debug test
-2024/08/29 13:57:31.32 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Loading FXML.
-2024/08/29 13:57:32.43 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Waiting start.
-2024/08/29 13:57:32.44 j.u.u.m.AppStartManager        DEBUG [JavaFX Application Thread                         ] - AppStartManager.waitStart:mainWindow.getTitle()=うどんべいのパスタ退治
-2024/08/29 13:57:38.08 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - GameMap build success.
-2024/08/29 13:57:38.46 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - Draw success.
-2024/08/29 13:57:51.40 j.u.u.Main                     INFO  [main                                              ] - Application Exit.
-2024/08/29 13:58:04.21 j.u.u.Main                     INFO  [main                                              ] - Application Start.
-2024/08/29 13:58:04.21 j.u.u.Main                     INFO  [main                                              ] - Setting develop environment.
-2024/08/29 13:58:04.21 j.u.u.Main                     INFO  [main                                              ] - Using develop environment.
-2024/08/29 13:58:04.24 j.u.u.Main                     DEBUG [JavaFX Application Thread                         ] - debug test
-2024/08/29 13:58:04.24 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Loading FXML.
-2024/08/29 13:58:05.36 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Waiting start.
-2024/08/29 13:58:05.37 j.u.u.m.AppStartManager        DEBUG [JavaFX Application Thread                         ] - AppStartManager.waitStart:mainWindow.getTitle()=うどんべいのパスタ退治
-2024/08/29 13:58:10.57 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - GameMap build success.
-2024/08/29 13:58:10.97 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - Draw success.
-2024/08/29 13:58:16.92 j.u.u.Main                     INFO  [main                                              ] - Application Exit.
-2024/08/29 13:58:29.03 j.u.u.Main                     INFO  [main                                              ] - Application Start.
-2024/08/29 13:58:29.04 j.u.u.Main                     INFO  [main                                              ] - Setting develop environment.
-2024/08/29 13:58:29.04 j.u.u.Main                     INFO  [main                                              ] - Using develop environment.
-2024/08/29 13:58:29.06 j.u.u.Main                     DEBUG [JavaFX Application Thread                         ] - debug test
-2024/08/29 13:58:29.06 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Loading FXML.
-2024/08/29 13:58:30.16 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Waiting start.
-2024/08/29 13:58:30.17 j.u.u.m.AppStartManager        DEBUG [JavaFX Application Thread                         ] - AppStartManager.waitStart:mainWindow.getTitle()=うどんべいのパスタ退治
-2024/08/29 13:58:38.69 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - GameMap build success.
-2024/08/29 13:58:39.06 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - Draw success.
-2024/08/29 13:58:46.59 j.u.u.Main                     INFO  [main                                              ] - Application Exit.
-2024/08/29 14:00:10.67 j.u.u.Main                     INFO  [main                                              ] - Application Start.
-2024/08/29 14:00:10.67 j.u.u.Main                     INFO  [main                                              ] - Setting develop environment.
-2024/08/29 14:00:10.67 j.u.u.Main                     INFO  [main                                              ] - Using develop environment.
-2024/08/29 14:00:10.70 j.u.u.Main                     DEBUG [JavaFX Application Thread                         ] - debug test
-2024/08/29 14:00:10.70 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Loading FXML.
-2024/08/29 14:00:11.79 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Waiting start.
-2024/08/29 14:00:11.79 j.u.u.m.AppStartManager        DEBUG [JavaFX Application Thread                         ] - AppStartManager.waitStart:mainWindow.getTitle()=うどんべいのパスタ退治
-2024/08/29 14:00:16.27 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - GameMap build success.
-2024/08/29 14:00:16.64 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - Draw success.
-2024/08/29 14:00:21.76 j.u.u.Main                     INFO  [main                                              ] - Application Exit.
-2024/08/29 14:14:06.75 j.u.u.Main                     INFO  [main                                              ] - Application Start.
-2024/08/29 14:14:06.75 j.u.u.Main                     INFO  [main                                              ] - Setting develop environment.
-2024/08/29 14:14:06.75 j.u.u.Main                     INFO  [main                                              ] - Using develop environment.
-2024/08/29 14:14:06.78 j.u.u.Main                     DEBUG [JavaFX Application Thread                         ] - debug test
-2024/08/29 14:14:06.78 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Loading FXML.
-2024/08/29 14:14:07.96 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Waiting start.
-2024/08/29 14:14:07.96 j.u.u.m.AppStartManager        DEBUG [JavaFX Application Thread                         ] - AppStartManager.waitStart:mainWindow.getTitle()=うどんべいのパスタ退治
-2024/08/29 14:14:13.78 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - GameMap build success.
-2024/08/29 14:14:14.17 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - Draw success.
-2024/08/29 14:14:55.37 j.u.u.Main                     INFO  [main                                              ] - Application Exit.
-2024/08/29 14:16:08.81 j.u.u.Main                     INFO  [main                                              ] - Application Start.
-2024/08/29 14:16:08.81 j.u.u.Main                     INFO  [main                                              ] - Setting develop environment.
-2024/08/29 14:16:08.81 j.u.u.Main                     INFO  [main                                              ] - Using develop environment.
-2024/08/29 14:16:08.84 j.u.u.Main                     DEBUG [JavaFX Application Thread                         ] - debug test
-2024/08/29 14:16:08.84 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Loading FXML.
-2024/08/29 14:16:10.04 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Waiting start.
-2024/08/29 14:16:10.05 j.u.u.m.AppStartManager        DEBUG [JavaFX Application Thread                         ] - AppStartManager.waitStart:mainWindow.getTitle()=うどんべいのパスタ退治
-2024/08/29 14:16:17.94 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - GameMap build success.
-2024/08/29 14:16:18.48 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - Draw success.
-2024/08/29 14:16:22.30 j.u.u.Main                     INFO  [main                                              ] - Application Exit.
-2024/08/29 14:17:27.18 j.u.u.Main                     INFO  [main                                              ] - Application Start.
-2024/08/29 14:17:27.18 j.u.u.Main                     INFO  [main                                              ] - Setting develop environment.
-2024/08/29 14:17:27.18 j.u.u.Main                     INFO  [main                                              ] - Using develop environment.
-2024/08/29 14:17:27.21 j.u.u.Main                     DEBUG [JavaFX Application Thread                         ] - debug test
-2024/08/29 14:17:27.22 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Loading FXML.
-2024/08/29 14:17:28.50 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Waiting start.
-2024/08/29 14:17:28.51 j.u.u.m.AppStartManager        DEBUG [JavaFX Application Thread                         ] - AppStartManager.waitStart:mainWindow.getTitle()=うどんべいのパスタ退治
-2024/08/29 14:17:59.71 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - GameMap build success.
-2024/08/29 14:18:00.54 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - Draw success.
-2024/08/29 14:18:06.35 j.u.u.Main                     INFO  [main                                              ] - Application Exit.
-2024/08/29 14:19:07.08 j.u.u.Main                     INFO  [main                                              ] - Application Start.
-2024/08/29 14:19:07.08 j.u.u.Main                     INFO  [main                                              ] - Setting develop environment.
-2024/08/29 14:19:07.08 j.u.u.Main                     INFO  [main                                              ] - Using develop environment.
-2024/08/29 14:19:07.12 j.u.u.Main                     DEBUG [JavaFX Application Thread                         ] - debug test
-2024/08/29 14:19:07.13 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Loading FXML.
-2024/08/29 14:19:08.52 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Waiting start.
-2024/08/29 14:19:08.53 j.u.u.m.AppStartManager        DEBUG [JavaFX Application Thread                         ] - AppStartManager.waitStart:mainWindow.getTitle()=うどんべいのパスタ退治
-2024/08/29 14:19:13.12 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - GameMap build success.
-2024/08/29 14:19:13.51 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - Draw success.
-2024/08/29 14:19:20.93 j.u.u.Main                     INFO  [main                                              ] - Application Exit.
-2024/08/29 14:28:03.97 j.u.u.Main                     INFO  [main                                              ] - Application Start.
-2024/08/29 14:28:03.97 j.u.u.Main                     INFO  [main                                              ] - Setting develop environment.
-2024/08/29 14:28:03.97 j.u.u.Main                     INFO  [main                                              ] - Using develop environment.
-2024/08/29 14:28:03.99 j.u.u.Main                     DEBUG [JavaFX Application Thread                         ] - debug test
-2024/08/29 14:28:03.99 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Loading FXML.
-2024/08/29 14:28:05.07 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Waiting start.
-2024/08/29 14:28:09.99 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - GameMap build success.
-2024/08/29 14:28:10.37 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - Draw success.
-2024/08/29 14:28:26.44 j.u.u.Main                     INFO  [main                                              ] - Application Exit.
-2024/08/29 14:29:29.95 j.u.u.Main                     INFO  [main                                              ] - Application Start.
-2024/08/29 14:29:29.96 j.u.u.Main                     INFO  [main                                              ] - Setting develop environment.
-2024/08/29 14:29:29.96 j.u.u.Main                     INFO  [main                                              ] - Using develop environment.
-2024/08/29 14:29:29.99 j.u.u.Main                     DEBUG [JavaFX Application Thread                         ] - debug test
-2024/08/29 14:29:29.99 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Loading FXML.
-2024/08/29 14:29:31.23 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Waiting start.
-2024/08/29 14:29:36.13 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - GameMap build success.
-2024/08/29 14:29:36.51 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - Draw success.
-2024/08/29 14:29:40.16 j.u.u.Main                     INFO  [main                                              ] - Application Exit.
-2024/08/29 14:30:05.24 j.u.u.Main                     INFO  [main                                              ] - Application Start.
-2024/08/29 14:30:05.25 j.u.u.Main                     INFO  [main                                              ] - Setting develop environment.
-2024/08/29 14:30:05.25 j.u.u.Main                     INFO  [main                                              ] - Using develop environment.
-2024/08/29 14:30:05.27 j.u.u.Main                     DEBUG [JavaFX Application Thread                         ] - debug test
-2024/08/29 14:30:05.27 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Loading FXML.
-2024/08/29 14:30:06.38 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Waiting start.
-2024/08/29 14:30:11.68 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - GameMap build success.
-2024/08/29 14:30:12.05 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - Draw success.
-2024/08/29 14:30:21.64 j.u.u.Main                     INFO  [main                                              ] - Application Exit.
-2024/08/29 14:31:41.08 j.u.u.Main                     INFO  [main                                              ] - Application Start.
-2024/08/29 14:31:41.09 j.u.u.Main                     INFO  [main                                              ] - Setting develop environment.
-2024/08/29 14:31:41.09 j.u.u.Main                     INFO  [main                                              ] - Using develop environment.
-2024/08/29 14:31:41.11 j.u.u.Main                     DEBUG [JavaFX Application Thread                         ] - debug test
-2024/08/29 14:31:41.11 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Loading FXML.
-2024/08/29 14:31:42.18 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Waiting start.
-2024/08/29 14:31:46.64 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - GameMap build success.
-2024/08/29 14:31:47.04 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - Draw success.
-2024/08/29 14:32:16.95 j.u.u.Main                     INFO  [main                                              ] - Application Exit.
-2024/08/29 14:32:43.24 j.u.u.Main                     INFO  [main                                              ] - Application Start.
-2024/08/29 14:32:43.24 j.u.u.Main                     INFO  [main                                              ] - Setting develop environment.
-2024/08/29 14:32:43.24 j.u.u.Main                     INFO  [main                                              ] - Using develop environment.
-2024/08/29 14:32:43.26 j.u.u.Main                     DEBUG [JavaFX Application Thread                         ] - debug test
-2024/08/29 14:32:43.26 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Loading FXML.
-2024/08/29 14:32:44.37 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Waiting start.
-2024/08/29 14:32:48.97 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - GameMap build success.
-2024/08/29 14:32:49.35 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - Draw success.
-2024/08/29 14:32:55.38 j.u.u.Main                     INFO  [main                                              ] - Application Exit.
-2024/08/29 17:13:05.07 j.u.u.Main                     INFO  [main                                              ] - Application Start.
-2024/08/29 17:13:05.08 j.u.u.Main                     INFO  [main                                              ] - Setting develop environment.
-2024/08/29 17:13:05.08 j.u.u.Main                     INFO  [main                                              ] - Using develop environment.
-2024/08/29 17:13:05.12 j.u.u.Main                     DEBUG [JavaFX Application Thread                         ] - debug test
-2024/08/29 17:13:05.12 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Loading FXML.
-2024/08/29 17:13:07.73 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Waiting start.
-2024/08/29 17:13:16.62 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - GameMap build success.
-2024/08/29 17:13:17.04 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - Draw success.
-2024/08/29 17:13:25.76 j.u.u.Main                     INFO  [main                                              ] - Application Exit.
-2024/08/29 17:14:52.23 j.u.u.Main                     INFO  [main                                              ] - Application Start.
-2024/08/29 17:14:52.23 j.u.u.Main                     INFO  [main                                              ] - Setting develop environment.
-2024/08/29 17:14:52.23 j.u.u.Main                     INFO  [main                                              ] - Using develop environment.
-2024/08/29 17:14:52.25 j.u.u.Main                     DEBUG [JavaFX Application Thread                         ] - debug test
-2024/08/29 17:14:52.25 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Loading FXML.
-2024/08/29 17:14:53.38 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Waiting start.
-2024/08/29 17:14:58.48 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - GameMap build success.
-2024/08/29 17:14:58.88 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - Draw success.
-2024/08/29 17:15:25.96 j.u.u.Main                     INFO  [main                                              ] - Application Exit.
-2024/08/29 17:18:21.66 j.u.u.Main                     INFO  [main                                              ] - Application Start.
-2024/08/29 17:18:21.66 j.u.u.Main                     INFO  [main                                              ] - Setting develop environment.
-2024/08/29 17:18:21.66 j.u.u.Main                     INFO  [main                                              ] - Using develop environment.
-2024/08/29 17:18:21.69 j.u.u.Main                     DEBUG [JavaFX Application Thread                         ] - debug test
-2024/08/29 17:18:21.69 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Loading FXML.
+2024/09/01 10:46:31.73 j.u.u.Main                     INFO  [main                                              ] - Application Start.
+2024/09/01 10:46:31.76 j.u.u.Main                     INFO  [main                                              ] - Setting develop environment.
+2024/09/01 10:46:31.76 j.u.u.Main                     INFO  [main                                              ] - Using develop environment.
+2024/09/01 10:46:31.80 j.u.u.Main                     DEBUG [JavaFX Application Thread                         ] - debug test
+2024/09/01 10:46:31.80 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Loading FXML.
+2024/09/01 10:46:33.13 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Waiting start.
+2024/09/01 10:46:35.62 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@25cf8e7e, view=ImageView@3c8cda84[styleClass=image-view], contactable=false)
+2024/09/01 10:46:35.75 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@427d4c95, view=ImageView@86520cb[styleClass=image-view], contactable=false)
+2024/09/01 10:46:35.85 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@6018771d, view=ImageView@62e48b2e[styleClass=image-view], contactable=false)
+2024/09/01 10:46:35.93 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@1f06b97a, view=ImageView@944f0af[styleClass=image-view], contactable=false)
+2024/09/01 10:46:36.01 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@67116fed, view=ImageView@45dac5ab[styleClass=image-view], contactable=false)
+2024/09/01 10:46:36.09 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@515af503, view=ImageView@15df00dd[styleClass=image-view], contactable=false)
+2024/09/01 10:46:36.16 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@4ccb52fc, view=ImageView@b3904af[styleClass=image-view], contactable=false)
+2024/09/01 10:46:36.22 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@3813f627, view=ImageView@396d599f[styleClass=image-view], contactable=false)
+2024/09/01 10:46:36.29 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@4e22d4d9, view=ImageView@6284d099[styleClass=image-view], contactable=false)
+2024/09/01 10:46:36.34 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@6128f252, view=ImageView@41577439[styleClass=image-view], contactable=false)
+2024/09/01 10:46:36.39 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@298dbf54, view=ImageView@75683db4[styleClass=image-view], contactable=false)
+2024/09/01 10:46:36.44 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@5649e589, view=ImageView@49a9e424[styleClass=image-view], contactable=false)
+2024/09/01 10:46:36.50 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@1ef57eb, view=ImageView@4d045f22[styleClass=image-view], contactable=false)
+2024/09/01 10:46:36.54 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@48872ff0, view=ImageView@789b264a[styleClass=image-view], contactable=false)
+2024/09/01 10:46:36.59 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@46524437, view=ImageView@2903e8d6[styleClass=image-view], contactable=false)
+2024/09/01 10:46:36.64 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@4ead4b41, view=ImageView@50b872d3[styleClass=image-view], contactable=false)
+2024/09/01 10:46:36.69 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@dcd1736, view=ImageView@3a0e98d7[styleClass=image-view], contactable=false)
+2024/09/01 10:46:36.75 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@6ac6fd5e, view=ImageView@12ad2530[styleClass=image-view], contactable=false)
+2024/09/01 10:46:36.81 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@6273ccf6, view=ImageView@43945617[styleClass=image-view], contactable=false)
+2024/09/01 10:46:36.86 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@60c2bc6f, view=ImageView@4a42e3ab[styleClass=image-view], contactable=false)
+2024/09/01 10:46:36.90 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@72d7f8b2, view=ImageView@6e3451ef[styleClass=image-view], contactable=false)
+2024/09/01 10:46:36.95 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@672d9aa2, view=ImageView@76e85a9e[styleClass=image-view], contactable=false)
+2024/09/01 10:46:36.99 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@63e2f354, view=ImageView@c579fa[styleClass=image-view], contactable=false)
+2024/09/01 10:46:37.05 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@4525b5cb, view=ImageView@1aa006ae[styleClass=image-view], contactable=false)
+2024/09/01 10:46:37.11 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@2f1572ee, view=ImageView@1c4f4450[styleClass=image-view], contactable=false)
+2024/09/01 10:46:37.16 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@61c65b70, view=ImageView@2801c369[styleClass=image-view], contactable=false)
+2024/09/01 10:46:37.20 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@578b9b3d, view=ImageView@1e1e38c0[styleClass=image-view], contactable=false)
+2024/09/01 10:46:37.25 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@4e764b87, view=ImageView@20cad3f8[styleClass=image-view], contactable=false)
+2024/09/01 10:46:37.30 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@5f7c5c6d, view=ImageView@25623daf[styleClass=image-view], contactable=false)
+2024/09/01 10:46:37.35 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@75be46a0, view=ImageView@52a4d159[styleClass=image-view], contactable=false)
+2024/09/01 10:46:37.39 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@184f2f1e, view=ImageView@2bffa67b[styleClass=image-view], contactable=false)
+2024/09/01 10:46:37.43 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@52da246e, view=ImageView@6045cc43[styleClass=image-view], contactable=false)
+2024/09/01 10:46:37.49 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@3e7314a0, view=ImageView@196e393c[styleClass=image-view], contactable=false)
+2024/09/01 10:46:37.55 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@34b6303e, view=ImageView@5e47952a[styleClass=image-view], contactable=false)
+2024/09/01 10:46:37.59 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@3f930334, view=ImageView@4a797ba2[styleClass=image-view], contactable=false)
+2024/09/01 10:46:37.63 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@68e598ce, view=ImageView@4427aec5[styleClass=image-view], contactable=false)
+2024/09/01 10:46:37.67 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@1e953b89, view=ImageView@6a8d6b0d[styleClass=image-view], contactable=false)
+2024/09/01 10:46:37.71 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@18a9b2f8, view=ImageView@7b608822[styleClass=image-view], contactable=false)
+2024/09/01 10:46:37.77 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@238c97fc, view=ImageView@28b7ce92[styleClass=image-view], contactable=false)
+2024/09/01 10:46:37.83 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@1ebfa28c, view=ImageView@16e9170d[styleClass=image-view], contactable=false)
+2024/09/01 10:46:37.88 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@20fcfb61, view=ImageView@7ad9ccf6[styleClass=image-view], contactable=false)
+2024/09/01 10:46:37.92 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@5045b8e0, view=ImageView@709b20c6[styleClass=image-view], contactable=false)
+2024/09/01 10:46:37.96 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@c53ec31, view=ImageView@56748bda[styleClass=image-view], contactable=false)
+2024/09/01 10:46:38.01 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@28685247, view=ImageView@287ea7c0[styleClass=image-view], contactable=false)
+2024/09/01 10:46:38.07 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@5c799c4f, view=ImageView@1ae8c76a[styleClass=image-view], contactable=false)
+2024/09/01 10:46:38.13 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@4adea1e7, view=ImageView@4582425d[styleClass=image-view], contactable=false)
+2024/09/01 10:46:38.18 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@61315f4b, view=ImageView@63ea9f47[styleClass=image-view], contactable=false)
+2024/09/01 10:46:38.23 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@35684c19, view=ImageView@1ba3872e[styleClass=image-view], contactable=false)
+2024/09/01 10:46:38.27 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@5d9c80fe, view=ImageView@49a34edd[styleClass=image-view], contactable=false)
+2024/09/01 10:46:38.31 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@4beaf3b, view=ImageView@7053f724[styleClass=image-view], contactable=false)
+2024/09/01 10:46:38.36 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@1cd4c7e5, view=ImageView@77cddb45[styleClass=image-view], contactable=false)
+2024/09/01 10:46:38.41 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@6d0275ee, view=ImageView@18364ae1[styleClass=image-view], contactable=false)
+2024/09/01 10:46:38.45 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@337184cb, view=ImageView@ad031aa[styleClass=image-view], contactable=false)
+2024/09/01 10:46:38.49 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@1a4c4c8a, view=ImageView@3e666cff[styleClass=image-view], contactable=false)
+2024/09/01 10:46:38.54 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@68d2e1f7, view=ImageView@7f7f03ab[styleClass=image-view], contactable=false)
+2024/09/01 10:46:38.59 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@7157efb2, view=ImageView@f4ecb9d[styleClass=image-view], contactable=false)
+2024/09/01 10:46:38.64 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@449eee50, view=ImageView@71c6c88b[styleClass=image-view], contactable=false)
+2024/09/01 10:46:38.69 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@53b0bb09, view=ImageView@7df8b1eb[styleClass=image-view], contactable=false)
+2024/09/01 10:46:38.73 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@76fdc7b0, view=ImageView@6e8779ae[styleClass=image-view], contactable=false)
+2024/09/01 10:46:38.78 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@2bbf0355, view=ImageView@274cf26c[styleClass=image-view], contactable=false)
+2024/09/01 10:46:38.82 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@17a2affe, view=ImageView@3033a0d6[styleClass=image-view], contactable=false)
+2024/09/01 10:46:38.88 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@cf84513, view=ImageView@48691b1[styleClass=image-view], contactable=false)
+2024/09/01 10:46:38.95 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@2392fb0f, view=ImageView@30463399[styleClass=image-view], contactable=false)
+2024/09/01 10:46:38.99 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@754fce46, view=ImageView@50243084[styleClass=image-view], contactable=false)
+2024/09/01 10:46:39.04 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@42b3cbcb, view=ImageView@c93e19e[styleClass=image-view], contactable=false)
+2024/09/01 10:46:39.09 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@1a80fb7b, view=ImageView@6a1ccc3f[styleClass=image-view], contactable=false)
+2024/09/01 10:46:39.12 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@53ba7f28, view=ImageView@12b1e584[styleClass=image-view], contactable=false)
+2024/09/01 10:46:39.17 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@3bffef4d, view=ImageView@51c75f93[styleClass=image-view], contactable=false)
+2024/09/01 10:46:39.21 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@549aba33, view=ImageView@46cd5cba[styleClass=image-view], contactable=false)
+2024/09/01 10:46:39.25 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@725dd4d1, view=ImageView@3ac046bf[styleClass=image-view], contactable=false)
+2024/09/01 10:46:39.30 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@3c2ef7c4, view=ImageView@346241c7[styleClass=image-view], contactable=false)
+2024/09/01 10:46:39.35 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@73ac8914, view=ImageView@3eaf3caa[styleClass=image-view], contactable=false)
+2024/09/01 10:46:39.40 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@665a3a11, view=ImageView@21990375[styleClass=image-view], contactable=false)
+2024/09/01 10:46:39.46 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@268a5ff6, view=ImageView@32cc387e[styleClass=image-view], contactable=false)
+2024/09/01 10:46:39.51 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@4da15d03, view=ImageView@79e9c7d[styleClass=image-view], contactable=false)
+2024/09/01 10:46:39.56 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@2c1d4431, view=ImageView@5eec0abb[styleClass=image-view], contactable=false)
+2024/09/01 10:46:39.60 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@775b2b82, view=ImageView@5c61f37a[styleClass=image-view], contactable=false)
+2024/09/01 10:46:39.66 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@2311430f, view=ImageView@5060aa9d[styleClass=image-view], contactable=false)
+2024/09/01 10:46:39.70 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@54ab377, view=ImageView@7409fe3f[styleClass=image-view], contactable=false)
+2024/09/01 10:46:39.74 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@4611c4c3, view=ImageView@79c7c67b[styleClass=image-view], contactable=false)
+2024/09/01 10:46:39.76 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - GameMap build success.
+2024/09/01 10:46:40.17 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - Draw success.
+2024/09/01 10:46:51.25 j.u.u.Main                     INFO  [main                                              ] - Application Exit.
+2024/09/01 10:47:36.71 j.u.u.Main                     INFO  [main                                              ] - Application Start.
+2024/09/01 10:47:36.71 j.u.u.Main                     INFO  [main                                              ] - Setting develop environment.
+2024/09/01 10:47:36.71 j.u.u.Main                     INFO  [main                                              ] - Using develop environment.
+2024/09/01 10:47:36.73 j.u.u.Main                     DEBUG [JavaFX Application Thread                         ] - debug test
+2024/09/01 10:47:36.73 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Loading FXML.
+2024/09/01 10:47:37.85 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Waiting start.
+2024/09/01 10:47:38.92 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@5feaec52, view=ImageView@1ac06851[styleClass=image-view], contactable=false)
+2024/09/01 10:47:39.02 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@5bc1c06d, view=ImageView@18da81d1[styleClass=image-view], contactable=false)
+2024/09/01 10:47:39.11 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@379dae39, view=ImageView@57151ee9[styleClass=image-view], contactable=false)
+2024/09/01 10:47:39.18 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@40032f9e, view=ImageView@46aa8b3f[styleClass=image-view], contactable=false)
+2024/09/01 10:47:39.24 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@73253cf5, view=ImageView@703df606[styleClass=image-view], contactable=false)
+2024/09/01 10:47:39.32 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@609c7f0c, view=ImageView@5fac0d5[styleClass=image-view], contactable=false)
+2024/09/01 10:47:39.39 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@588de976, view=ImageView@280938c1[styleClass=image-view], contactable=false)
+2024/09/01 10:47:39.44 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@2410d4d5, view=ImageView@1056a074[styleClass=image-view], contactable=false)
+2024/09/01 10:47:39.51 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@50c009de, view=ImageView@2b727d1a[styleClass=image-view], contactable=false)
+2024/09/01 10:47:39.57 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@5855d9a4, view=ImageView@4f5680a4[styleClass=image-view], contactable=false)
+2024/09/01 10:47:39.61 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@5f717ef5, view=ImageView@66dac28c[styleClass=image-view], contactable=false)
+2024/09/01 10:47:39.67 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@89df3a, view=ImageView@4465fdae[styleClass=image-view], contactable=false)
+2024/09/01 10:47:39.72 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@1bc5fd25, view=ImageView@31073819[styleClass=image-view], contactable=false)
+2024/09/01 10:47:39.76 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@8c3767a, view=ImageView@20da5999[styleClass=image-view], contactable=false)
+2024/09/01 10:47:39.80 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@6ed21b1b, view=ImageView@46f9ca35[styleClass=image-view], contactable=false)
+2024/09/01 10:47:39.85 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@5c70d919, view=ImageView@493cf195[styleClass=image-view], contactable=false)
+2024/09/01 10:47:39.90 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@33b1015a, view=ImageView@3e349798[styleClass=image-view], contactable=false)
+2024/09/01 10:47:39.96 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@680a0bcb, view=ImageView@46de38ad[styleClass=image-view], contactable=false)
+2024/09/01 10:47:40.01 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@69e25d2, view=ImageView@75ec41c3[styleClass=image-view], contactable=false)
+2024/09/01 10:47:40.05 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@531dbe5f, view=ImageView@4d091528[styleClass=image-view], contactable=false)
+2024/09/01 10:47:40.10 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@29e946a6, view=ImageView@634e612b[styleClass=image-view], contactable=false)
+2024/09/01 10:47:40.16 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@39437c1b, view=ImageView@3b143bd7[styleClass=image-view], contactable=false)
+2024/09/01 10:47:40.20 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@4b550ba3, view=ImageView@2af4dda4[styleClass=image-view], contactable=false)
+2024/09/01 10:47:40.25 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@1b35ba4f, view=ImageView@42c30bac[styleClass=image-view], contactable=false)
+2024/09/01 10:47:40.30 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@59a87c23, view=ImageView@5e18f2cb[styleClass=image-view], contactable=false)
+2024/09/01 10:47:40.36 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@64ca2e54, view=ImageView@373448e1[styleClass=image-view], contactable=false)
+2024/09/01 10:47:40.42 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@308e2e24, view=ImageView@1f74048c[styleClass=image-view], contactable=false)
+2024/09/01 10:47:40.47 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@1c0881f5, view=ImageView@63c95f28[styleClass=image-view], contactable=false)
+2024/09/01 10:47:40.52 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@3fb5377d, view=ImageView@49436022[styleClass=image-view], contactable=false)
+2024/09/01 10:47:40.58 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@450f2cba, view=ImageView@7a17a488[styleClass=image-view], contactable=false)
+2024/09/01 10:47:40.62 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@5a8b4b0a, view=ImageView@4fc458d8[styleClass=image-view], contactable=false)
+2024/09/01 10:47:40.66 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@217d941f, view=ImageView@4c56f5ff[styleClass=image-view], contactable=false)
+2024/09/01 10:47:40.71 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@231c1881, view=ImageView@2395aa6a[styleClass=image-view], contactable=false)
+2024/09/01 10:47:40.76 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@6e8b463b, view=ImageView@4dd2137f[styleClass=image-view], contactable=false)
+2024/09/01 10:47:40.81 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@16b0b4b1, view=ImageView@6ed4cae[styleClass=image-view], contactable=false)
+2024/09/01 10:47:40.85 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@7fff02c7, view=ImageView@73abeab7[styleClass=image-view], contactable=false)
+2024/09/01 10:47:40.90 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@dc9bd1d, view=ImageView@7fe21973[styleClass=image-view], contactable=false)
+2024/09/01 10:47:40.94 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@793f6aef, view=ImageView@36db32d6[styleClass=image-view], contactable=false)
+2024/09/01 10:47:40.99 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@c7f8bc1, view=ImageView@7c2e45e3[styleClass=image-view], contactable=false)
+2024/09/01 10:47:41.04 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@1769d7be, view=ImageView@15609802[styleClass=image-view], contactable=false)
+2024/09/01 10:47:41.09 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@38419a19, view=ImageView@7a439b60[styleClass=image-view], contactable=false)
+2024/09/01 10:47:41.14 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@45c5071f, view=ImageView@3717d728[styleClass=image-view], contactable=false)
+2024/09/01 10:47:41.19 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@34c3b046, view=ImageView@24c02171[styleClass=image-view], contactable=false)
+2024/09/01 10:47:41.24 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@1d20c1a5, view=ImageView@73d0a4b6[styleClass=image-view], contactable=false)
+2024/09/01 10:47:41.29 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@36bf0d4c, view=ImageView@4afc014[styleClass=image-view], contactable=false)
+2024/09/01 10:47:41.34 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@5cc4a374, view=ImageView@12a13beb[styleClass=image-view], contactable=false)
+2024/09/01 10:47:41.38 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@55e0b0c2, view=ImageView@5ad2ecec[styleClass=image-view], contactable=false)
+2024/09/01 10:47:41.42 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@364d739, view=ImageView@1eb8d4a3[styleClass=image-view], contactable=false)
+2024/09/01 10:47:41.47 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@1ac364ee, view=ImageView@150cd82[styleClass=image-view], contactable=false)
+2024/09/01 10:47:41.51 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@2b8f3850, view=ImageView@1db63c58[styleClass=image-view], contactable=false)
+2024/09/01 10:47:41.56 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@3a67f178, view=ImageView@1f571965[styleClass=image-view], contactable=false)
+2024/09/01 10:47:41.60 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@29982e43, view=ImageView@2bf80a8e[styleClass=image-view], contactable=false)
+2024/09/01 10:47:41.63 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@10357de9, view=ImageView@5764620[styleClass=image-view], contactable=false)
+2024/09/01 10:47:41.68 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@39bd1bb0, view=ImageView@60e2c95d[styleClass=image-view], contactable=false)
+2024/09/01 10:47:41.73 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@62be9886, view=ImageView@41e03b4[styleClass=image-view], contactable=false)
+2024/09/01 10:47:41.78 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@194959ac, view=ImageView@356322cf[styleClass=image-view], contactable=false)
+2024/09/01 10:47:41.83 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@1ba32274, view=ImageView@5a4237c6[styleClass=image-view], contactable=false)
+2024/09/01 10:47:41.88 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@2e810319, view=ImageView@15deac87[styleClass=image-view], contactable=false)
+2024/09/01 10:47:41.92 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@5017d9e9, view=ImageView@2050107e[styleClass=image-view], contactable=false)
+2024/09/01 10:47:41.97 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@1e9f4e45, view=ImageView@33cd8f[styleClass=image-view], contactable=false)
+2024/09/01 10:47:42.02 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@d897202, view=ImageView@7125168b[styleClass=image-view], contactable=false)
+2024/09/01 10:47:42.07 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@3b448c45, view=ImageView@47257536[styleClass=image-view], contactable=false)
+2024/09/01 10:47:42.12 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@3093bc11, view=ImageView@58758874[styleClass=image-view], contactable=false)
+2024/09/01 10:47:42.16 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@368c8962, view=ImageView@18cc6037[styleClass=image-view], contactable=false)
+2024/09/01 10:47:42.19 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@3806b9d5, view=ImageView@5f4f68cf[styleClass=image-view], contactable=false)
+2024/09/01 10:47:42.23 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@c71583, view=ImageView@58bfb0e5[styleClass=image-view], contactable=false)
+2024/09/01 10:47:42.27 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@642d5036, view=ImageView@125015c2[styleClass=image-view], contactable=false)
+2024/09/01 10:47:42.32 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@468bfd7, view=ImageView@3c44b80d[styleClass=image-view], contactable=false)
+2024/09/01 10:47:42.36 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@4556dd44, view=ImageView@631e43bc[styleClass=image-view], contactable=false)
+2024/09/01 10:47:42.42 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@34285fcf, view=ImageView@503d5f1c[styleClass=image-view], contactable=false)
+2024/09/01 10:47:42.47 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@232eb88b, view=ImageView@52428b0c[styleClass=image-view], contactable=false)
+2024/09/01 10:47:42.52 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@fee6a94, view=ImageView@11f9cfd9[styleClass=image-view], contactable=false)
+2024/09/01 10:47:42.57 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@158d590, view=ImageView@374e56d9[styleClass=image-view], contactable=false)
+2024/09/01 10:47:42.62 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@52432a2c, view=ImageView@748e19c7[styleClass=image-view], contactable=false)
+2024/09/01 10:47:42.67 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@27fec122, view=ImageView@7aeeb633[styleClass=image-view], contactable=false)
+2024/09/01 10:47:42.72 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@60a0aecd, view=ImageView@6c05cee4[styleClass=image-view], contactable=false)
+2024/09/01 10:47:42.76 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@14fcc45f, view=ImageView@427c3b7b[styleClass=image-view], contactable=false)
+2024/09/01 10:47:42.80 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@65308f4c, view=ImageView@748125aa[styleClass=image-view], contactable=false)
+2024/09/01 10:47:42.84 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@50a7ca2f, view=ImageView@37d3ed1a[styleClass=image-view], contactable=false)
+2024/09/01 10:47:42.88 j.u.u.m.GameMap                DEBUG [Thread-4                                          ] - 11.GameObject(x=0, y=0, image=javafx.scene.image.Image@32a4cc94, view=ImageView@2e7e5985[styleClass=image-view], contactable=false)
+2024/09/01 10:47:42.91 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - GameMap build success.
+2024/09/01 10:47:43.32 j.u.u.m.AppStartManager        INFO  [JavaFX Application Thread                         ] - Draw success.
+2024/09/01 10:47:57.53 j.u.u.Main                     INFO  [main                                              ] - Application Exit.

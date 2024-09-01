@@ -1,0 +1,9 @@
+.forward-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.forward-button:armed {
+    -fx-background-color: transparent;
+    -fx-text-fill: gray;
+}

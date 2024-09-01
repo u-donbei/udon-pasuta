@@ -124,6 +124,7 @@ public final class AppStartManager {
 			LOGGER.info("Draw success.");
 			Platform.runLater(() -> {
 				Scene scene = new Scene(pane, 800, 500);
+				scene.getStylesheets().add(AppStartManager.class.getResource("/css/style.css").toExternalForm());
 				mainWindow.setScene(scene);
 
 				GameLoopManager.gameLoop(pane);
