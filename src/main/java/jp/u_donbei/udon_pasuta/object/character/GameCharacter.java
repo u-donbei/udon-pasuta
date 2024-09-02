@@ -29,12 +29,12 @@ public abstract class GameCharacter extends GameObject implements Movable {
 	}
 
 	@Override
-	public void moveX(int x) {
+	public void moveX(double x) {
 		setX(getX() + x);
 	}
 
 	@Override
-	public void moveY(int y) {
+	public void moveY(double y) {
 		setY(getY() + y);
 	}
 }

@@ -8,12 +8,14 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import jp.u_donbei.udon_pasuta.control.TextPanel;
+import jp.u_donbei.udon_pasuta.map.GameMap;
 import jp.u_donbei.udon_pasuta.object.block.Block;
 import jp.u_donbei.udon_pasuta.object.character.GameCharacter;
 import lombok.Getter;
 
 import javax.swing.border.Border;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -34,9 +36,14 @@ public class MainPane extends AnchorPane {
 	 */
 	private SubScene subScene;
 	private List<GameCharacter> characters;
-	private List<Block> blocks;
+	private GameMap map;
 
-	public MainPane() {
+	/**
+	 * コンストラクタ。
+	 * mapを元にImageViewを追加するので処理に時間がかかる可能性があります。
+	 * @param map
+	 */
+	public MainPane(GameMap map) {
 		gamePane = new Pane();
 		textPanel = new TextPanel();
 		subScene = new SubScene(gamePane, 800, 500);
@@ -44,7 +51,7 @@ public class MainPane extends AnchorPane {
 		subScene.setCamera(camera);
 
 		characters = new ArrayList<>();
-		blocks = new ArrayList<>();
+		this.map = map;
 
 		//表示位置・大きさの設定
 		AnchorPane.setTopAnchor(subScene, 0d);
@@ -58,6 +65,13 @@ public class MainPane extends AnchorPane {
 		textPanel.setPrefHeight(200d);
 
 		getChildren().addAll(subScene, textPanel);
+
+		//ImageViewを追加
+		for (Block[] blocks : map.getBlocks()) {
+			for (Block block : blocks) {
+				addBlock(block);
+			}
+		}
 	}
 
 	/**
@@ -76,12 +90,18 @@ public class MainPane extends AnchorPane {
 	 */
 	public void addBlock(Block block) {
 		gamePane.getChildren().add(block.getView());
-		blocks.add(block);
-		block.updateView();
+		map.setBlock(block);
 	}
 
 	public Camera getCamera() {
 		return subScene.getCamera();
 	}
 
+	public List<Block> getGameMap() {
+		List<Block> res = new ArrayList<>();
+		for (Block[] blocks : map.getBlocks()) {
+			res.addAll(Arrays.asList(blocks));
+		}
+		return res;
+	}
 }

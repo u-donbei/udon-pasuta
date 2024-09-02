@@ -1,20 +1,26 @@
 package jp.u_donbei.udon_pasuta.managers;
 
 import javafx.animation.AnimationTimer;
-import javafx.scene.layout.Pane;
-import jp.u_donbei.udon_pasuta.Main;
 import jp.u_donbei.udon_pasuta.map.GameMap;
 import jp.u_donbei.udon_pasuta.object.block.Block;
 import jp.u_donbei.udon_pasuta.object.character.Udonbei;
 import jp.u_donbei.udon_pasuta.pane.MainPane;
+import lombok.extern.slf4j.Slf4j;
+
+import java.util.List;
+import java.util.Optional;
 
 /**
  * ゲームループに関する処理を行う。
  */
+@Slf4j
 public final class GameLoopManager {
 	private static Udonbei player;
 	private static boolean isUp, isDown, isLeft, isRight, isShift;
-	private static int SCREEN_W = 800, SCREEN_H = 400;
+	private static final double SCREEN_W = 800;
+	private static final double SCREEN_H = 400;
+	private static boolean isPushBackTop, isPushBackBottom, isPushBackLeft, isPushBackRight;
+	private static double udonDiffX, udonDiffY;
 	/**
 	 * ゲームループを行う。
 	 * 先に初期化を行います。
@@ -32,6 +38,8 @@ public final class GameLoopManager {
 
 	private static void gameLoopImpl(MainPane gamePane) {
 		final boolean isDashed = movePlayer();
+		pushBack(gamePane.getGameMap());
+		initPlayerPosDiff();
 		scroll(gamePane, isDashed);
 
 		player.updateView();
@@ -69,30 +77,11 @@ public final class GameLoopManager {
 	 * Y座標が250以上ならば縦にスクロールを行う。
 	 */
 	private static void scroll(MainPane pane, boolean isDashed) {
-		int addPos = isDashed ? 6 : 3;
-		if (isRight && player.getX() >= SCREEN_W / 2 && player.getX() < Block.DEFAULT_WIDTH * GameMap.MAP_W - SCREEN_W / 2) {
-			pane.getCamera().setTranslateX(pane.getCamera().getTranslateX() + 3);
-			if (isDashed) {
-				pane.getCamera().setTranslateX(pane.getCamera().getTranslateX() + 3);
-			}
+		if (player.getX() >= SCREEN_W / 2 - udonDiffX && player.getX() < Block.DEFAULT_WIDTH * GameMap.MAP_W - SCREEN_W / 2) {
+			pane.getCamera().setTranslateX(pane.getCamera().getTranslateX() - udonDiffX);
 		}
-		if (isLeft && player.getX() >= SCREEN_W / 2 - addPos) {
-			pane.getCamera().setTranslateX(pane.getCamera().getTranslateX() - 3);
-			if (isDashed) {
-				pane.getCamera().setTranslateX(pane.getCamera().getTranslateX() - 3);
-			}
-		}
-		if (isUp && player.getY() >= SCREEN_H / 2 - addPos) {
-			pane.getCamera().setTranslateY(pane.getCamera().getTranslateY() - 3);
-			if (isDashed) {
-				pane.getCamera().setTranslateY(pane.getCamera().getTranslateY() - 3);
-			}
-		}
-		if (isDown && player.getY() >= SCREEN_H / 2 && player.getY() < Block.DEFAULT_HEIGHT * GameMap.MAP_H - SCREEN_H / 2) {
-			pane.getCamera().setTranslateY(pane.getCamera().getTranslateY() + 3);
-			if (isDashed) {
-				pane.getCamera().setTranslateY(pane.getCamera().getTranslateY() + 3);
-			}
+		if (player.getY() >= SCREEN_H / 2 - udonDiffY && player.getY() < Block.DEFAULT_HEIGHT * GameMap.MAP_H - SCREEN_H / 2) {
+			pane.getCamera().setTranslateY(pane.getCamera().getTranslateY() - udonDiffY);
 		}
 	}
 
@@ -134,5 +123,36 @@ public final class GameLoopManager {
 			}
 		}
 		return isDashed;
+	}
+
+	/**
+	 * プレイヤーを押し戻す。
+	 * 押し戻したかどうかに応じてスクロールを停止します。
+	 * @param blocks 押し戻すブロックが入った配列
+	 */
+	private static void pushBack(List<Block> blocks) {
+		for (Block block : blocks) {
+			Optional<Block.PushBackDirection> pushBackRes = block.pushBack(player);
+
+			if (pushBackRes.isPresent()) {
+				Block.PushBackDirection direction = pushBackRes.get();
+
+				switch (direction) {
+					case TOP -> isPushBackTop = true;
+					case BOTTOM -> isPushBackBottom = true;
+					case LEFT -> isPushBackLeft = true;
+					case RIGHT -> isPushBackRight = true;
+				}
+			}
+		}
+	}
+
+	/**
+	 * プレイヤーの座標の差分を設定する。
+	 */
+	private static void initPlayerPosDiff() {
+		//getX()やgetY()とgetView().getTranslateX()やgetView().getTranslateY()の差分を利用する
+		udonDiffX = player.getView().getTranslateX() - player.getX();
+		udonDiffY = player.getView().getTranslateY() - player.getY();
 	}
 }

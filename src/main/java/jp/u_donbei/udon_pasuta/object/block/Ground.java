@@ -14,6 +14,6 @@ public class Ground extends Block {
 		super(TextureUtil.getTexture("ground").orElseThrow(() -> {
 			LOGGER.error("Texture ground not found.");
 			return new IllegalStateException("Texture ground not found.");
-		}));
+		}), false);
 	}
 }

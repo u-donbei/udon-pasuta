@@ -34,20 +34,31 @@ public class GameMap {
 	 * {@link #blocks}を初期化(ブロックを配置)する。
 	 */
 	public void build() {
-		for (Block[] blocks : blocks) {
+		for (int j = 0; j < blocks.length; j++) {
+			Block[] blocks = this.blocks[j];
 			for (int i = 0; i < blocks.length; i++) {
-				blocks[i] = new Ground();
+				Block block = new Ground();
 				if (i == 10) {
-					blocks[i] = new DebugBlock();
+					block = new DebugBlock();
 				}
-				if (i == 11) {
-					log.debug("11.{}", blocks[i - 1]);
-				}
+				block.setX(j * Block.DEFAULT_WIDTH);
+				block.setY(i * Block.DEFAULT_HEIGHT);
+				setBlock(block);
 			}
 		}
 	}
 
 	public Block[][] getBlocks() {
 		return blocks;
+	}
+
+	/**
+	 * ブロックを追加する。
+	 * blockの座標から配列のインデックスを計算します。
+	 * @param block 追加するブロック
+	 */
+	public void setBlock(Block block) {
+		blocks[(int) block.getX() / Block.DEFAULT_WIDTH][(int) block.getY() / Block.DEFAULT_HEIGHT] = block;
+		block.updateView();
 	}
 }

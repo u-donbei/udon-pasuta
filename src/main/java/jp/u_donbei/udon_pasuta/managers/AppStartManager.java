@@ -1,21 +1,16 @@
 package jp.u_donbei.udon_pasuta.managers;
 
-import javafx.application.Platform;
 import javafx.concurrent.Service;
 import javafx.concurrent.Task;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
-import javafx.scene.image.ImageView;
 import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
-import jp.u_donbei.udon_pasuta.Main;
 import jp.u_donbei.udon_pasuta.map.GameMap;
-import jp.u_donbei.udon_pasuta.object.block.Block;
 import jp.u_donbei.udon_pasuta.pane.MainPane;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -90,45 +85,14 @@ public final class AppStartManager {
 	 * mainWindowのSceneをメインに変更する
 	 */
 	private static void changeSceneToMain(GameMap map) {
-		MainPane pane = new MainPane();
+		MainPane pane = new MainPane(map);
 
-		//paneにImageViewを追加
-		//時間がかかるのでバックグラウンド処理
-		Service<Void> drawService= new Service<>() {
-			@Override
-			protected Task<Void> createTask() {
-				return new Task<>() {
-					@Override
-					protected Void call() {
-						Block[][] mapBlocks = map.getBlocks();
-						for (int i = 0; i < mapBlocks.length; i++) {
-							Block[] blocks = mapBlocks[i];
-							for (int j = 0; j < blocks.length; j++) {
-								Block block = blocks[j];
-								int fi = i;
-								int fj = j;
-								Platform.runLater(() -> {
-									block.setX(fi * Block.DEFAULT_WIDTH);
-									block.setY(fj * Block.DEFAULT_HEIGHT);
-									pane.addBlock(block);
-								});
-							}
-						}
-						return null;
-					}
-				};
-			}
-		};
-		drawService.start();
-		drawService.setOnSucceeded(e -> {
-			LOGGER.info("Draw success.");
-			Platform.runLater(() -> {
-				Scene scene = new Scene(pane, 800, 500);
-				scene.getStylesheets().add(AppStartManager.class.getResource("/css/style.css").toExternalForm());
-				mainWindow.setScene(scene);
+		LOGGER.info("Draw success.");
+		Scene scene = new Scene(pane, 800, 500);
+		scene.getStylesheets().add(AppStartManager.class.getResource("/css/style.css").toExternalForm());
+		mainWindow.setScene(scene);
 
-				GameLoopManager.gameLoop(pane);
-			});
-		});
+		GameLoopManager.gameLoop(pane);
+
 	}
 }

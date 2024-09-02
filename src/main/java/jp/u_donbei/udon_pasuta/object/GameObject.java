@@ -13,7 +13,7 @@ import java.nio.file.Path;
  */
 @Data
 public abstract class GameObject implements HasTexture {
-	private int x, y;
+	private double x, y;
 	private Image image;
 	private transient ImageView view;
 	private boolean contactable;
@@ -46,6 +46,6 @@ public abstract class GameObject implements HasTexture {
 	public boolean isContact(GameObject target) {
 		Bounds bounds = getView().getBoundsInParent();
 		Bounds targetBounds = target.getView().getBoundsInParent();
-		return bounds.intersects(targetBounds);
+		return isContactable() && bounds.intersects(targetBounds);
 	}
 }

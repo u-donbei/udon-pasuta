@@ -8,10 +8,10 @@ public interface Movable {
 	 * X方向に動く。
 	 * @param x X方向の差分
 	 */
-	void moveX(int x);
+	void moveX(double x);
 	/**
 	 * Y方向に動く。
 	 * @param y Y方向の差分
 	 */
-	void moveY(int y);
+	void moveY(double y);
 }

@@ -1,6 +1,7 @@
 package jp.u_donbei.udon_pasuta.object.block;
 
 import jp.u_donbei.udon_pasuta.path.PathConstants;
+import jp.u_donbei.udon_pasuta.texture.TextureUtil;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -10,6 +11,6 @@ import java.nio.file.Paths;
  */
 public class DebugBlock extends Block {
 	public DebugBlock() {
-		super(Paths.get(PathConstants.TEXTURES.getPath() + "debug.png"));
+		super(TextureUtil.getTexture("debug").orElse(Paths.get("")), true);
 	}
 }
