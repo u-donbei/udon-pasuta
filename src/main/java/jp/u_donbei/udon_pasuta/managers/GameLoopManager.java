@@ -83,6 +83,13 @@ public final class GameLoopManager {
 		if (player.getY() >= SCREEN_H / 2 - udonDiffY && player.getY() < Block.DEFAULT_HEIGHT * GameMap.MAP_H - SCREEN_H / 2) {
 			pane.getCamera().setTranslateY(pane.getCamera().getTranslateY() - udonDiffY);
 		}
+		//カメラの座標が負の数になった場合は0に戻す
+		if (pane.getCamera().getTranslateX() < 0) {
+			pane.getCamera().setTranslateX(0);
+		}
+		if (pane.getCamera().getTranslateY() < 0) {
+			pane.getCamera().setTranslateY(0);
+		}
 	}
 
 	/**

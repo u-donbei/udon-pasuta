@@ -28,16 +28,27 @@ public abstract class Block extends GameObject {
 		if (!isContact(target)) return Optional.empty();
 		Bounds bounds = getView().getBoundsInParent(), targetBounds = target.getView().getBoundsInParent();
 
-		double horizontal = getX() - target.getX();
-		double vertical = (bounds.getMinY() - targetBounds.getMaxY());
+		double top = (bounds.getMinY() - targetBounds.getMaxY());
+		double bottom = (bounds.getMaxY() - targetBounds.getMinY());
 
-		//if (horizontal > 0) {
-		//	target.moveX(-horizontal);
-		//}
-		if (vertical < 0) {
-			target.moveY(vertical);
+		double left = (bounds.getMinX() - targetBounds.getMaxX());
+		double right = (bounds.getMaxX() - targetBounds.getMinX());
+
+		//変数名 != (-)1は接触で動けなくなるのを防いでいる
+		if (top < 0 && top > -5 && top != -1) {
+			target.moveY(top);
 			return Optional.of(PushBackDirection.TOP);
+		} else if (left < 0 && left > -5 && left != -1) {
+			target.moveX(left);
+			return Optional.of(PushBackDirection.LEFT);
+		} else if (bottom > 0 && bottom < 5 && bottom != 1) {
+			target.moveY(bottom);
+			return Optional.of(PushBackDirection.BOTTOM);
+		}  else if (right > 0 && right < 5 && bottom != 1) {
+			target.moveX(right);
+			return Optional.of(PushBackDirection.RIGHT);
 		}
+
 		return Optional.empty();
 	}
 

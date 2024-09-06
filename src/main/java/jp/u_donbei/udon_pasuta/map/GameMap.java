@@ -38,7 +38,13 @@ public class GameMap {
 			Block[] blocks = this.blocks[j];
 			for (int i = 0; i < blocks.length; i++) {
 				Block block = new Ground();
-				if (i == 10) {
+				if (i == 5 && j == 5) {
+					block = new DebugBlock();
+				}
+				if (i == 5 && j == 6) {
+					block = new DebugBlock();
+				}
+				if (i == 5 && j == 7) {
 					block = new DebugBlock();
 				}
 				block.setX(j * Block.DEFAULT_WIDTH);
