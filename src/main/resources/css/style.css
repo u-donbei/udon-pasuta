@@ -7,3 +7,14 @@
     -fx-background-color: transparent;
     -fx-text-fill: gray;
 }
+
+.text-panel {
+    -fx-background-color: rgba(0, 0, 0, 0.5);
+
+    -fx-border-image-insets: 5px;
+
+    -fx-border-image-source: url('../textures/textpanel_corner.png');
+    -fx-border-image-slice: 26ada fill;
+    -fx-border-image-width: 26;
+    -fx-border-image-repeat: stretch;
+}

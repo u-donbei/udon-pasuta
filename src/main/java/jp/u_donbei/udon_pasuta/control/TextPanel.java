@@ -22,9 +22,9 @@ import java.util.concurrent.atomic.AtomicReference;
  */
 @Slf4j
 public class TextPanel extends BorderPane {
-	private Label textLabel;
-	private ImageView imageView;
-	private Button forwardButton;
+	private final Label textLabel;
+	private final ImageView imageView;
+	private final Button forwardButton;
 
 	public TextPanel() {
 		textLabel = new Label();
@@ -41,13 +41,8 @@ public class TextPanel extends BorderPane {
 		//スタイルの設定
 		textLabel.setTextFill(Color.WHITE);
 		textLabel.setFont(FontUtil.getPixelMplus12Regular(20));
-		setStyle("""
-				-fx-background-color: rgba(0, 0, 0, 0.5);
-				-fx-border-width: 2;
-				-fx-border-color: white;
-				-fx-border-insets: 5px;
-				-fx-border-style: solid;
-				""");
+
+		getStyleClass().add("text-panel");
 
 		forwardButton.getStyleClass().add("forward-button");
 		forwardButton.setFont(FontUtil.getPixelMplus12Regular(12));
