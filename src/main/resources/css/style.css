@@ -14,7 +14,7 @@
     -fx-border-image-insets: 5px;
 
     -fx-border-image-source: url('../textures/textpanel_corner.png');
-    -fx-border-image-slice: 26 fill;
-    -fx-border-image-width: 26;
+    -fx-border-image-slice: 13 fill;
+    -fx-border-image-width: 13;
     -fx-border-image-repeat: stretch;
 }
