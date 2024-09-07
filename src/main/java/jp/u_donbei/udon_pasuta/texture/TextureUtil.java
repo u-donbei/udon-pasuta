@@ -9,7 +9,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.nio.file.Files;
-import java.nio.file.LinkOption;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Optional;
@@ -39,5 +38,23 @@ public final class TextureUtil {
 		} else {
 			return Optional.empty();
 		}
+	}
+
+	/**
+	 * テクスチャを取得する。
+	 * 対応している形式は.png, .jpgです。
+	 * @param name テクスチャのファイル名(拡張子は除く)
+	 *             .pngと.jpgの両方のファイルが存在している場合、.pngが選択されます。
+	 * @throws IllegalStateException ファイルが存在しない場合
+	 * @return テクスチャファイル。
+	 */
+	public static Path getTextureThrow(String name) {
+		Optional<Path> path = getTexture(name);
+
+		if (path.isEmpty()){
+			LOGGER.error("Texture {} not found.", name);
+			throw new IllegalStateException("Texture udon not found.");
+		}
+		return path.get();
 	}
 }
