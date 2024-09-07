@@ -4,20 +4,44 @@
 
 package jp.u_donbei.udon_pasuta.object.character;
 
+import javafx.scene.image.Image;
+import jp.u_donbei.udon_pasuta.object.Animation;
 import jp.u_donbei.udon_pasuta.texture.TextureUtil;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * うどんべい(プレイヤー)を表す。
  */
-public class Udonbei extends GameCharacter {
-	private static final Logger LOGGER = LoggerFactory.getLogger(Udonbei.class);
+public class Udonbei extends GameCharacter implements Animation {
+
+	private final List<Image> textures;
+	private int currentTextureIndex;
 
 	public Udonbei() {
-		super(TextureUtil.getTexture("udon").orElseThrow(() -> {
-			LOGGER.error("Texture udon not found.");
-			return new IllegalStateException("Texture udon not found.");
-		}));
+		super(TextureUtil.getTextureThrow("udon_step"));
+
+		textures = new ArrayList<>() {
+			{
+				add(getImage());
+				add(new Image(TextureUtil.getTextureThrow("udon_step").toUri().toString()));
+			}
+		};
+	}
+
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public void nextTexture() {
+		changeTexture(currentTextureIndex++ % 2);
+	}
+
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public void changeTexture(int id) {
+		setImage(textures.get(id));
 	}
 }
