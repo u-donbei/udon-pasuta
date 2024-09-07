@@ -1,3 +1,7 @@
 # デフォルトの無視対象ファイル
 /shelf/
 /workspace.xml
+
+# 追加した無視対象ファイル
+*.log
+log/
