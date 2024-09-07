@@ -1,10 +1,16 @@
+/*
+ * Copyright (c) 2024 u-donbei. All Rights Reserved.
+ */
+
 plugins {
     id 'java'
     id 'application'
     id 'org.javamodularity.moduleplugin' version '1.8.12'
     id 'org.openjfx.javafxplugin' version '0.0.13'
     id 'org.beryx.jlink' version '2.25.0'
+    id "com.github.hierynomus.license" version "0.15.0"
 }
+
 
 group 'jp.u_donbei'
 version '1.0-SNAPSHOT'
@@ -92,7 +98,7 @@ tasks.register('buildCount') {
         for (int i = reader.read();
              i != -1;
              i = reader.read()) {
-            str += (char) i;
+            str += (char) i
         }
         c = Integer.parseInt(str)
     }
@@ -102,4 +108,3 @@ tasks.register('buildCount') {
 }
 
 jpackage.dependsOn buildCount
-

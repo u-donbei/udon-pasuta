@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2024 u-donbei. All Rights Reserved.
+ */
+
 package jp.u_donbei.udon_pasuta.control;
 
 import javafx.application.Platform;
