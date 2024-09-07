@@ -23,7 +23,6 @@ public final class GameLoopManager {
 	private static boolean isUp, isDown, isLeft, isRight, isShift;
 	private static final double SCREEN_W = 800;
 	private static final double SCREEN_H = 400;
-	private static boolean isPushBackTop, isPushBackBottom, isPushBackLeft, isPushBackRight;
 	private static double udonDiffX, udonDiffY;
 	/**
 	 * ゲームループを行う。
@@ -143,18 +142,7 @@ public final class GameLoopManager {
 	 */
 	private static void pushBack(List<Block> blocks) {
 		for (Block block : blocks) {
-			Optional<Block.PushBackDirection> pushBackRes = block.pushBack(player);
-
-			if (pushBackRes.isPresent()) {
-				Block.PushBackDirection direction = pushBackRes.get();
-
-				switch (direction) {
-					case TOP -> isPushBackTop = true;
-					case BOTTOM -> isPushBackBottom = true;
-					case LEFT -> isPushBackLeft = true;
-					case RIGHT -> isPushBackRight = true;
-				}
-			}
+			block.pushBack(player);
 		}
 	}
 
