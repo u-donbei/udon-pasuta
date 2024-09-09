@@ -12,7 +12,6 @@ import jp.u_donbei.udon_pasuta.pane.MainPane;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.List;
-import java.util.Optional;
 
 /**
  * ゲームループに関する処理を行う。
@@ -24,6 +23,8 @@ public final class GameLoopManager {
 	private static final double SCREEN_W = 800;
 	private static final double SCREEN_H = 400;
 	private static double udonDiffX, udonDiffY;
+	private static long beforeTime;
+
 	/**
 	 * ゲームループを行う。
 	 * 先に初期化を行います。
@@ -33,17 +34,18 @@ public final class GameLoopManager {
 		AnimationTimer timer = new AnimationTimer() {
 			@Override
 			public void handle(long now) {
-				gameLoopImpl(gamePane);
+				gameLoopImpl(gamePane, now);
 			}
 		};
 		timer.start();
 	}
 
-	private static void gameLoopImpl(MainPane gamePane) {
-		final boolean isDashed = movePlayer();
+	private static void gameLoopImpl(MainPane gamePane, long now) {
+		movePlayer();
 		pushBack(gamePane.getGameMap());
 		initPlayerPosDiff();
-		scroll(gamePane, isDashed);
+		scroll(gamePane);
+		animation(now);
 
 		player.updateView();
 	}
@@ -79,7 +81,7 @@ public final class GameLoopManager {
 	 * うどんべいのX座標が400以上ならば横に、
 	 * Y座標が250以上ならば縦にスクロールを行う。
 	 */
-	private static void scroll(MainPane pane, boolean isDashed) {
+	private static void scroll(MainPane pane) {
 		if (player.getX() >= SCREEN_W / 2 - udonDiffX && player.getX() < Block.DEFAULT_WIDTH * GameMap.MAP_W - SCREEN_W / 2) {
 			pane.getCamera().setTranslateX(pane.getCamera().getTranslateX() - udonDiffX);
 		}
@@ -97,14 +99,11 @@ public final class GameLoopManager {
 
 	/**
 	 * キー入力に応じてプレイヤーを動かす
-	 * @return ダッシュしたかどうか
 	 */
-	private static boolean movePlayer() {
-		boolean isDashed = false;
+	private static void movePlayer() {
 		if (isUp && player.getY() > 0) {
 			player.moveY(-3);
 			if (isShift) {
-				isDashed = true;
 				player.moveY(-3);
 			}
 		}
@@ -112,7 +111,6 @@ public final class GameLoopManager {
 		if (isDown && player.getY() < (Block.DEFAULT_HEIGHT - 1) *  GameMap.MAP_H) {
 			player.moveY(3);
 			if (isShift) {
-				isDashed = true;
 				player.moveY(3);
 			}
 		}
@@ -120,7 +118,6 @@ public final class GameLoopManager {
 		if (isLeft && player.getX() > 0) {
 			player.moveX(-3);
 			if (isShift) {
-				isDashed = true;
 				player.moveX(-3);
 			}
 		}
@@ -128,11 +125,9 @@ public final class GameLoopManager {
 		if (isRight && player.getX() < (Block.DEFAULT_WIDTH - 1) * GameMap.MAP_W) {
 			player.moveX(3);
 			if (isShift) {
-				isDashed = true;
 				player.moveX(3);
 			}
 		}
-		return isDashed;
 	}
 
 	/**
@@ -153,5 +148,16 @@ public final class GameLoopManager {
 		//getX()やgetY()とgetView().getTranslateX()やgetView().getTranslateY()の差分を利用する
 		udonDiffX = player.getView().getTranslateX() - player.getX();
 		udonDiffY = player.getView().getTranslateY() - player.getY();
+	}
+
+	/**
+	 * キャラクターをアニメーションさせる。
+	 * @param now 現在のナノ秒
+	 */
+	private static void animation(long now) {
+		if (now - beforeTime >= 500_000_000) {
+			player.nextTexture();
+			beforeTime = now;
+		}
 	}
 }
