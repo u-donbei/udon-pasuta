@@ -38,8 +38,10 @@ public abstract class GameObject implements HasTexture {
 
 	/**
 	 * 座標と表示を同期する。
+	 * {@link #image}と{@link #view}も同期します。
 	 */
 	public void updateView() {
+		view.setImage(image);
 		view.setTranslateX(getX());
 		view.setTranslateY(getY());
 	}
