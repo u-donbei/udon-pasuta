@@ -8,5 +8,16 @@
 
 package jp.u_donbei.udon_pasuta.object.character;
 
-public class Onigiri {
+import jp.u_donbei.udon_pasuta.texture.TextureUtil;
+
+/**
+ * おにぎりくんのクラス。
+ */
+public class Onigiri extends GameCharacter {
+	/**
+	 * {@inheritDoc}
+	 */
+	public Onigiri() {
+		super(TextureUtil.getTextureThrow("onigiri"));
+	}
 }
