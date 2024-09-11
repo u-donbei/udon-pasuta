@@ -6,4 +6,7 @@
  * see https://www.eclipse.org/legal/epl-2.0/
  */
 
-rootProject.name = "udon_pasuta"
+package jp.u_donbei.udon_pasuta.object.character;
+
+public class Onigiri {
+}

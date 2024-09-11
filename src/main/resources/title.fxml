@@ -6,7 +6,11 @@
 <?import javafx.scene.text.Font?>
 
 <!--
-  ~ Copyright (c) 2024 u-donbei. All Rights Reserved.
+  ~ Copyright (c) 2024 u-donbei
+  ~
+  ~ Released under the EPL license.
+  ~
+  ~ see https://www.eclipse.org/legal/epl-2.0/
   -->
 
 <BorderPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" stylesheets="@css/title.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jp.u_donbei.udon_pasuta.controller.TitleController">
