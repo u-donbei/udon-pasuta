@@ -2,7 +2,19 @@
   <artifact name="unnamed">
     <output-path>$PROJECT_DIR$/out/artifacts/unnamed</output-path>
     <root id="root">
-      <element id="directory" name="lib" />
+      <element id="directory" name="lib">
+        <element id="library" level="project" name="Gradle: ch.qos.logback:logback-classic:1.5.6" />
+        <element id="library" level="project" name="Gradle: ch.qos.logback:logback-core:1.5.6" />
+        <element id="library" level="project" name="Gradle: org.openjfx:javafx-base:22" />
+        <element id="library" level="project" name="Gradle: org.openjfx:javafx-base:win:22" />
+        <element id="library" level="project" name="Gradle: org.openjfx:javafx-controls:22" />
+        <element id="library" level="project" name="Gradle: org.openjfx:javafx-controls:win:22" />
+        <element id="library" level="project" name="Gradle: org.openjfx:javafx-fxml:win:22" />
+        <element id="library" level="project" name="Gradle: org.openjfx:javafx-graphics:22" />
+        <element id="library" level="project" name="Gradle: org.openjfx:javafx-graphics:win:22" />
+        <element id="library" level="project" name="Gradle: org.projectlombok:lombok:1.18.30" />
+        <element id="library" level="project" name="Gradle: org.slf4j:slf4j-api:2.0.13" />
+      </element>
     </root>
   </artifact>
 </component>

@@ -65,9 +65,9 @@ test {
 
 jlink {
     imageZip = project.file("${buildDir}/distributions/app-${javafx.platform.classifier}.zip")
-    options = ['--strip-debug', '--compress', '2', '--no-header-files', '--no-man-pages']
+    options = ['--no-header-files', '--no-man-pages']
     launcher {
-        name = 'app'
+        name = 'うどんべいのパスタ退治'
     }
 }
 
@@ -75,15 +75,19 @@ jlinkZip {
     group = 'distribution'
 }
 
+
 jlink {
     jpackage {
+
         mainClass = 'jp.u_donbei.udon_pasuta.Main'
         appVersion = '0.1.0'
         installerName = 'うどんべいのパスタ退治'
-        installerType = 'msi'
+        installerType = 'exe'
         installerOptions = [
                 '--install-dir', '\\udon-pasuta',
-                '--copyright', 'CopyRight (c) 2024 u-donbei. All Rights Reserved.',
+                '--copyright', 'CopyRight (c) 2024 u-donbei.',
+                '--vendor','u-donbei',
+                '--license-file','LICENSE',
                 '--win-dir-chooser',
                 '--win-menu',
                 '--win-per-user-install',
