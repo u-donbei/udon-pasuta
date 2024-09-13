@@ -65,7 +65,7 @@ test {
 
 jlink {
     imageZip = project.file("${buildDir}/distributions/app-${javafx.platform.classifier}.zip")
-    options = ['--no-header-files', '--no-man-pages']
+    options = ['--strip-debug', '--no-header-files', '--no-man-pages']
     launcher {
         name = 'うどんべいのパスタ退治'
     }
