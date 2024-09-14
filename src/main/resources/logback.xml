@@ -9,7 +9,7 @@
 
 <configuration>
 	<property name="log.pattern" value="%d{yyyy/MM/dd HH:mm:ss.SS} %-30c{15} %-5p [%-50t] - %msg%n" />
-	<property name="log.level" value="debug" />
+	<property name="log.level" value="info" />
 	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
 		<target>System.out</target>
 		<encoder>
