@@ -12,9 +12,11 @@ import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import jp.u_donbei.udon_pasuta.managers.AppStartManager;
+import jp.u_donbei.udon_pasuta.path.PathConstants;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -66,6 +68,7 @@ public class Main extends Application {
 
 		stage.setScene(mainScene);
         stage.setTitle("うどんべいのパスタ退治");
+		stage.getIcons().add(new Image(PathConstants.TEXTURES.toURI() + "/udon.png"));
         stage.show();
 
 		LOGGER.info("Waiting start.");
