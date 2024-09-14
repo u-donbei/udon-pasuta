@@ -83,7 +83,7 @@ jlink {
         installerName = 'うどんべいのパスタ退治'
         installerType = 'msi'
         imageOptions = [
-
+            '--input', 'input'
         ]
         installerOptions = [
                 '--install-dir', '\\udon-pasuta',
