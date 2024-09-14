@@ -13,6 +13,7 @@ plugins {
     id 'org.openjfx.javafxplugin' version '0.0.13'
     id 'org.beryx.jlink' version '2.25.0'
     id "com.github.hierynomus.license" version "0.15.0"
+    id 'edu.sc.seis.launch4j' version '2.5.3'
 }
 
 
@@ -65,24 +66,21 @@ test {
 
 jlink {
     imageZip = project.file("${buildDir}/distributions/app-${javafx.platform.classifier}.zip")
-    options = ['--strip-debug', '--no-header-files', '--no-man-pages']
+    options = ['--strip-debug', '--compress', '2', '--no-header-files', '--no-man-pages']
+
     launcher {
-        name = 'うどんべいのパスタ退治'
+        it.name = 'うどんべいのパスタ退治'
     }
-}
 
-jlinkZip {
-    group = 'distribution'
-}
-
-
-jlink {
     jpackage {
-
         mainClass = 'jp.u_donbei.udon_pasuta.Main'
         appVersion = '0.1.0'
+        jvmArgs.add('-Dcom.sun.management.jmxremote');
         installerName = 'うどんべいのパスタ退治'
-        installerType = 'exe'
+        installerType = 'msi'
+        imageOptions = [
+                '--win-console'
+        ]
         installerOptions = [
                 '--install-dir', '\\udon-pasuta',
                 '--copyright', 'CopyRight (c) 2024 u-donbei.',
@@ -96,6 +94,10 @@ jlink {
                 '--win-upgrade-uuid', 'f6f4a8e1-ccd6-4fb6-9029-deac82e257fb'
         ]
     }
+}
+
+jlinkZip {
+    group = 'distribution'
 }
 
 tasks.register('buildCount') {
@@ -113,6 +115,13 @@ tasks.register('buildCount') {
     try (Writer w = new FileWriter(count)) {
         w.write(Integer.toString(++c))
     }
+}
+
+launch4j {
+    mainClassName = 'jp.u_donbei.udon_pasuta.Main'
+    outputDir = 'exe/'
+    bundledJrePath = 'image'
+    bundledJre64Bit = true
 }
 
 jpackage.dependsOn buildCount
