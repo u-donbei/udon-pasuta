@@ -1,4 +1,5 @@
 # udon-pasuta-develop
+Issue、プルリクエストなどはご自由にどうぞ。
 
 ## ゲームの概要
 
