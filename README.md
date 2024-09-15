@@ -1,5 +1,5 @@
 ## udon-pasuta-develop
-Issue、プルリクエストなどはご自由にどうぞ。
+Issue、プルリクエスト、フォークなどはご自由にどうぞ。
 共同開発などしたい方はyu_w_main@yahoo.co.jpまでお願いします。
 
 ## ゲームの概要
