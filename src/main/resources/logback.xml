@@ -8,14 +8,13 @@
   -->
 
 <configuration>
-	<property name="log.pattern" value="%d{yyyy/MM/dd HH:mm:ss.SS} %-30c{15} %-5p [%-50t] - %msg%n" />
-	<property name="log.level" value="info" />
+	<property name="log.pattern" value="%d{yyyy/MM/dd HH:mm:ss.SS} %-30c{15} %-5p [%-50t] - %msg%n"/>
 	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
 		<target>System.out</target>
 		<encoder>
 			<pattern>${log.pattern}</pattern>
 		</encoder>
-		<filter class="jp.u_donbei.udon_pasuta.logging.filter.BelowFilter">
+		<filter class="jp.udonbei.udonpasuta.logging.filter.BelowFilter">
 			<level>WARN</level>
 		</filter>
 	</appender>
@@ -39,9 +38,9 @@
 		</encoder>
 	</appender>
 
-	<root level="${log.level}">
-		<appender-ref ref="STDOUT" />
-		<appender-ref ref="STDERR" />
-		<appender-ref ref="FILE" />
+	<root level="${udon.log.level}">
+		<appender-ref ref="STDOUT"/>
+		<appender-ref ref="STDERR"/>
+		<appender-ref ref="FILE"/>
 	</root>
 </configuration>

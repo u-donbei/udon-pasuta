@@ -12,8 +12,7 @@ plugins {
     id 'org.javamodularity.moduleplugin' version '1.8.12'
     id 'org.openjfx.javafxplugin' version '0.0.13'
     id 'org.beryx.jlink' version '2.25.0'
-    id "com.github.hierynomus.license" version "0.15.0"
-    id 'edu.sc.seis.launch4j' version '2.5.3'
+    id 'checkstyle'
 }
 
 
@@ -36,8 +35,8 @@ tasks.withType(JavaCompile).configureEach {
 }
 
 application {
-    mainModule = 'jp.u_donbei.udon_pasuta'
-    mainClass = 'jp.u_donbei.udon_pasuta.Main'
+    mainModule = 'jp.udonbei.udonpasuta'
+    mainClass = 'jp.udonbei.udonpasuta.Main'
 }
 
 javafx {
@@ -56,7 +55,7 @@ dependencies {
     //runtimeOnly "org.openjfx:javafx-fxml:$javafx.version:linux"
     runtimeOnly "org.openjfx:javafx-graphics:$javafx.version:win"
     //runtimeOnly "org.openjfx:javafx-graphics:$javafx.version:linux"
-    
+
     implementation 'ch.qos.logback:logback-classic:1.5.6'
 }
 
@@ -77,19 +76,19 @@ jlink {
     }
 
     jpackage {
-        mainClass = 'jp.u_donbei.udon_pasuta.Main'
+        mainClass = 'jp.udonbei.udonpasuta.Main'
         appVersion = '0.1.0'
         jvmArgs.add('-Dcom.sun.management.jmxremote');
         installerName = 'うどんべいのパスタ退治'
         installerType = 'msi'
         imageOptions = [
-            '--input', 'input'
+                '--input', 'input'
         ]
         installerOptions = [
                 '--install-dir', '\\udon-pasuta',
                 '--copyright', 'CopyRight (c) 2024 u-donbei.',
-                '--vendor','u-donbei',
-                '--license-file','LICENSE',
+                '--vendor', 'u-donbei',
+                '--license-file', 'LICENSE',
                 '--win-dir-chooser',
                 '--win-menu',
                 '--win-per-user-install',
@@ -102,6 +101,12 @@ jlink {
 
 jlinkZip {
     group = 'distribution'
+}
+
+checkstyle {
+    configFile = file("${rootProject.projectDir}/config/checkstyle/checkstyle.xml");
+    toolVersion = '10.18.0'
+    sourceSets = [project.sourceSets.main]
 }
 
 tasks.register('buildCount') {
@@ -119,13 +124,6 @@ tasks.register('buildCount') {
     try (Writer w = new FileWriter(count)) {
         w.write(Integer.toString(++c))
     }
-}
-
-launch4j {
-    mainClassName = 'jp.u_donbei.udon_pasuta.Main'
-    outputDir = 'exe/'
-    bundledJrePath = 'image'
-    bundledJre64Bit = true
 }
 
 jpackage.dependsOn buildCount
