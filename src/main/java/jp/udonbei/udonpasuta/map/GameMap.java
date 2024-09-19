@@ -13,6 +13,8 @@ import jp.udonbei.udonpasuta.object.block.DebugBlock;
 import jp.udonbei.udonpasuta.object.block.Ground;
 import lombok.extern.slf4j.Slf4j;
 
+import java.util.Arrays;
+
 /**
  * ゲームのマップを表す。
  */
@@ -22,7 +24,7 @@ public class GameMap {
     /**
      * マップデータ。
      */
-    private Block[][] blocks;
+    private final Block[][] blocks;
 
     /**
      * コンストラクタ。
@@ -61,7 +63,7 @@ public class GameMap {
     }
 
     public Block[][] getBlocks() {
-        return blocks;
+        return Arrays.copyOf(blocks, blocks.length);
     }
 
     /**

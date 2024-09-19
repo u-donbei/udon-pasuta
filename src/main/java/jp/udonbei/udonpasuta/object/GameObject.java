@@ -13,6 +13,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import jp.udonbei.udonpasuta.object.character.GameCharacter;
 import lombok.Data;
+import lombok.extern.slf4j.Slf4j;
 
 import java.net.MalformedURLException;
 import java.nio.file.Path;
@@ -21,6 +22,7 @@ import java.util.Optional;
 /**
  * 物を表す。
  */
+@Slf4j
 @Data
 public abstract class GameObject implements HasTexture {
     private double x, y;
@@ -39,7 +41,7 @@ public abstract class GameObject implements HasTexture {
             setImage(new Image(image.toUri().toURL().toExternalForm()));
             view = new ImageView(getImage());
         } catch (MalformedURLException e) {
-            throw new RuntimeException(e);
+            log.error("An fatal error occurred:", e);
         }
     }
 
@@ -71,7 +73,9 @@ public abstract class GameObject implements HasTexture {
      * @return 押し戻した方向(上から突っ込んで来た場合は上に押し戻します)
      */
     public Optional<PushBackDirection> pushBack(GameCharacter target) {
-        if (!isContact(target)) return Optional.empty();
+        if (!isContact(target)) {
+            return Optional.empty();
+        }
         Bounds bounds = getView().getBoundsInParent(), targetBounds = target.getView().getBoundsInParent();
 
         double top = (bounds.getMinY() - targetBounds.getMaxY());

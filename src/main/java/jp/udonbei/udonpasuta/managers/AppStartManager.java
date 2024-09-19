@@ -18,6 +18,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
+import jp.udonbei.udonpasuta.font.FontUtil;
 import jp.udonbei.udonpasuta.map.GameMap;
 import jp.udonbei.udonpasuta.pane.MainPane;
 import org.slf4j.Logger;
@@ -79,7 +80,7 @@ public final class AppStartManager {
         beforeScene = mainWindow.getScene();
         Label loadLabel = new Label("ロード中...");
         loadLabel.setTextFill(Color.WHITE);
-        loadLabel.setFont(Font.loadFont(AppStartManager.class.getResourceAsStream("/font/PixelMplus/PixelMplus12-Regular.ttf"), 36));
+        loadLabel.setFont(FontUtil.getPixelMplus12Regular(36));
 
         BorderPane loadPane = new BorderPane(loadLabel);
         loadPane.setBackground(new Background(new BackgroundFill(Color.BLACK, null, null)));
@@ -91,6 +92,7 @@ public final class AppStartManager {
 
     /**
      * mainWindowのSceneをメインに変更する
+     * @param map 生成したGameMap
      */
     private static void changeSceneToMain(GameMap map) {
         MainPane pane = new MainPane(map);

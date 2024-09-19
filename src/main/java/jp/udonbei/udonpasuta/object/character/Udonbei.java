@@ -20,13 +20,17 @@ import java.util.List;
  */
 @Slf4j
 public class Udonbei extends GameCharacter implements Animation {
-    private final List<Image> TEXTURES;
+    private static final List<Image> TEXTURES;
     private int currentTextureIndex;
+
+    static {
+        TEXTURES = List.of(
+                new Image(TextureUtil.getTextureThrow("udon").toUri().toString()),
+                new Image(TextureUtil.getTextureThrow("udon_step").toUri().toString()));
+    }
 
     public Udonbei() {
         super(TextureUtil.getTextureThrow("udon"));
-
-        TEXTURES = List.of(getImage(), new Image(TextureUtil.getTextureThrow("udon_step").toUri().toString()));
     }
 
     /**

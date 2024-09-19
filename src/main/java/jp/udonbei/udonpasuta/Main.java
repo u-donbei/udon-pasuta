@@ -61,7 +61,6 @@ public class Main extends Application {
 
     private static void updateLogbackConfigure() {
         LoggerContext context = (LoggerContext) LoggerFactory.getILoggerFactory();
-        ContextInitializer initializer = new ContextInitializer(context);
 
         JoranConfigurator configurator = new JoranConfigurator();
         configurator.setContext(context);

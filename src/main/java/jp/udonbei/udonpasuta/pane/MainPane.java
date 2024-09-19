@@ -39,15 +39,15 @@ public class MainPane extends AnchorPane {
     /**
      * スクロールするためのSubScene
      */
-    private SubScene subScene;
-    private List<GameCharacter> characters;
-    private GameMap map;
+    private final SubScene subScene;
+    private final List<GameCharacter> characters;
+    private final GameMap map;
 
     /**
      * コンストラクタ。
      * mapを元にImageViewを追加するので処理に時間がかかる可能性があります。
      *
-     * @param map
+     * @param map 生成されたGameMap
      */
     public MainPane(GameMap map) {
         gamePane = new Pane();

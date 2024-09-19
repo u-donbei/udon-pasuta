@@ -57,6 +57,44 @@ public class TextPanel extends BorderPane {
         BorderPane.setAlignment(forwardButton, Pos.CENTER);
     }
 
+    private static Service<Void> getChangeService(
+            String text,
+            long millis,
+            StringReader reader,
+            boolean isEnterNestedLoop) {
+        int length = text.length();
+
+        //Serviceを利用してバックグラウンドで書き換える
+        return new Service<>() {
+            @Override
+            protected Task<Void> createTask() {
+                return new Task<>() {
+                    @Override
+                    protected Void call() {
+                        try {
+                            AtomicReference<Object> rval = new AtomicReference<>();
+                            if (isEnterNestedLoop) {
+                                Platform.runLater(() -> rval.set(Platform.enterNestedEventLoop("text-panel-change-text-loop")));
+                            }
+                            StringBuilder builder = new StringBuilder();
+                            for (int i = 0; i < length; i++) {
+                                builder.append((char) reader.read());
+                                updateMessage(builder.toString());
+                                TimeUnit.MILLISECONDS.sleep(millis);
+                            }
+                            if (isEnterNestedLoop) {
+                                Platform.runLater(() -> Platform.exitNestedEventLoop("text-panel-change-text-loop", rval.get()));
+                            }
+                        } catch (Exception e) {
+                            log.error("An Exception has occurred. text={}", text, e);
+                        }
+                        return null;
+                    }
+                };
+            }
+        };
+    }
+
     /**
      * テキストを少しづつ変更する。
      *
@@ -91,7 +129,12 @@ public class TextPanel extends BorderPane {
      * @param textChangeExited テキストの変更が終了したときに呼び出す処理
      * @param forwarded        ▼ボタンが押された時の処理
      */
-    public void changeTextLittleByLittle(String text, long millis, Image image, Runnable textChangeExited, Runnable forwarded) {
+    public void changeTextLittleByLittle(
+            String text,
+            long millis,
+            Image image,
+            Runnable textChangeExited,
+            Runnable forwarded) {
         changeTextLittleByLittle(text, millis, image, textChangeExited, forwarded, false);
     }
 
@@ -105,7 +148,13 @@ public class TextPanel extends BorderPane {
      * @param forwarded         ▼ボタンが押された時の処理
      * @param isEnterNestedLoop {@link Platform#enterNestedEventLoop(Object)}でネストされたイベントループに入り、処理を一時停止するかどうか
      */
-    public void changeTextLittleByLittle(String text, long millis, Image image, Runnable textChangeExited, Runnable forwarded, boolean isEnterNestedLoop) {
+    public void changeTextLittleByLittle(
+            String text,
+            long millis,
+            Image image,
+            Runnable textChangeExited,
+            Runnable forwarded,
+            boolean isEnterNestedLoop) {
         //UIの初期化を行う
         forwardButton.setDisable(true);
         forwardButton.setVisible(true);
@@ -132,39 +181,5 @@ public class TextPanel extends BorderPane {
             forwardButton.setVisible(false);
         });
         changeService.start();
-    }
-
-    private static Service<Void> getChangeService(String text, long millis, StringReader reader, boolean isEnterNestedLoop) {
-        int length = text.length();
-
-        //Serviceを利用してバックグラウンドで書き換える
-        return new Service<>() {
-            @Override
-            protected Task<Void> createTask() {
-                return new Task<>() {
-                    @Override
-                    protected Void call() {
-                        try {
-                            AtomicReference<Object> rval = new AtomicReference<>();
-                            if (isEnterNestedLoop) {
-                                Platform.runLater(() -> rval.set(Platform.enterNestedEventLoop("text-panel-change-text-loop")));
-                            }
-                            StringBuilder builder = new StringBuilder();
-                            for (int i = 0; i < length; i++) {
-                                builder.append((char) reader.read());
-                                updateMessage(builder.toString());
-                                TimeUnit.MILLISECONDS.sleep(millis);
-                            }
-                            if (isEnterNestedLoop) {
-                                Platform.runLater(() -> Platform.exitNestedEventLoop("text-panel-change-text-loop", rval.get()));
-                            }
-                        } catch (Exception e) {
-                            log.error("An Exception has occurred. text={}", text, e);
-                        }
-                        return null;
-                    }
-                };
-            }
-        };
     }
 }

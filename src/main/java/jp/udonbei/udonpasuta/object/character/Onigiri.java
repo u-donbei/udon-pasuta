@@ -15,7 +15,7 @@ import jp.udonbei.udonpasuta.texture.TextureUtil;
  */
 public class Onigiri extends GameCharacter {
     /**
-     * {@inheritDoc}
+     * コンストラクタ。
      */
     public Onigiri() {
         super(TextureUtil.getTextureThrow("onigiri"));

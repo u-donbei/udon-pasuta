@@ -36,6 +36,7 @@ public final class GameLoopManager {
     /**
      * ゲームループを行う。
      * 先に初期化を行います。
+     * @param gamePane 生成したMainPane
      */
     public static void gameLoop(MainPane gamePane) {
         init(gamePane);
@@ -90,12 +91,15 @@ public final class GameLoopManager {
     /**
      * うどんべいのX座標が400以上ならば横に、
      * Y座標が250以上ならば縦にスクロールを行う。
+     * @param pane スクロールするMainPane
      */
     private static void scroll(MainPane pane) {
-        if (player.getX() >= SCREEN_W / 2 - udonDiffX && player.getX() < Block.DEFAULT_WIDTH * GameMap.MAP_W - SCREEN_W / 2) {
+        if (player.getX() >= SCREEN_W / 2 - udonDiffX
+            && player.getX() < Block.DEFAULT_WIDTH * GameMap.MAP_W - SCREEN_W / 2) {
             pane.getCamera().setTranslateX(pane.getCamera().getTranslateX() - udonDiffX);
         }
-        if (player.getY() >= SCREEN_H / 2 - udonDiffY && player.getY() < Block.DEFAULT_HEIGHT * GameMap.MAP_H - SCREEN_H / 2) {
+        if (player.getY() >= SCREEN_H / 2 - udonDiffY
+            && player.getY() < Block.DEFAULT_HEIGHT * GameMap.MAP_H - SCREEN_H / 2) {
             pane.getCamera().setTranslateY(pane.getCamera().getTranslateY() - udonDiffY);
         }
         //カメラの座標が負の数になった場合は0に戻す
@@ -145,6 +149,7 @@ public final class GameLoopManager {
      * 押し戻したかどうかに応じてスクロールを停止します。
      *
      * @param blocks 押し戻すブロックが入った配列
+     * @param characters 押し戻す対象のキャラクター
      */
     private static void pushBack(List<Block> blocks, List<GameCharacter> characters) {
         //当たり判定の対象を周囲のブロックに限定
