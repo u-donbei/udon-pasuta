@@ -7,16 +7,22 @@
 	<property name="localeLanguage" value="ja" />
 	<property name="charset" value="UTF-8" />
 	<property name="fileExtensions" value="java, xml, properties" />
-	
+
 	<module name="FileLength" >
 		<property name="max" value="500" />
 	</module>
 	<module name="LineLength">
-		<property name="max" value="120" />
+		<property name="severity" value="warning" />
+		<property name="max" value="200" />
 	</module>
+
+	<module name="BeforeExecutionExclusionFileFilter">
+		<property name="fileNamePattern" value="module\-info\.java$"/>
+	</module>
+
 	<module name="TreeWalker">
 		<property name="tabWidth" value="4" />
-		<property name="severity" value="warn" />
+		<property name="severity" value="warning" />
 
 		<module name="ConstantName">
 			<property name="severity" value="error" />
@@ -24,22 +30,51 @@
 		<module name="MemberName">
 			<property name="severity" value="error" />
 		</module>
+		<module name="ClassTypeParameterName">
+			<property name="severity" value="error" />
+		</module>
+		<module name="MethodTypeParameterName">
+			<property name="severity" value="error" />
+		</module>
+		<module name="InterfaceTypeParameterName">
+			<property name="severity" value="error" />
+		</module>
+		<module name="TypeName">
+			<property name="severity" value="error" />
+		</module>
 		<module name="PackageName">
 			<property name="severity" value="error" />
 		</module>
+		<module name="ModifierOrder" />
+		<module name="ArrayTypeStyle" />
+		<module name="UpperEll" />
 
-		<module name="EmptyBlock"/>
-		<module name="Indentation"/>
+		<module name="AvoidStarImport" />
+
+		<module name="EmptyBlock" />
+		<module name="Indentation" />
 
 		<module name="MethodLength">
-			<property name="max" value="100"/>
+			<property name="max" value="100" />
 			<property name="severity" value="error" />
 		</module>
+		<module name="NoLineWrap" />
+
+		<module name="NeedBraces" />
+		<module name="LeftCurly" />
+		<module name="RightCurly" />
+
+		<module name="WhitespaceAround" />
 
 		<module name="DefaultComesLast"/>
 		
 		<module name="JavadocMethod"/>
+		<module name="NonEmptyAtclauseDescription" />
 		
-		<module name="ToDoComment" />
+		<module name="TodoComment" />
+
+		<module name="NoFinalizer">
+			<property name="severity" value="error" />
+		</module>
 	</module>
 </module>
