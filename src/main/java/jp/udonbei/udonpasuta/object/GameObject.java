@@ -11,12 +11,15 @@ package jp.udonbei.udonpasuta.object;
 import javafx.geometry.Bounds;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import jp.udonbei.udonpasuta.object.block.Block;
 import jp.udonbei.udonpasuta.object.character.GameCharacter;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 
 import java.net.MalformedURLException;
 import java.nio.file.Path;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 /**
