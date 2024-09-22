@@ -164,7 +164,6 @@ public final class GameLoopManager {
                 })
                 .toList();
         for (Block block : blocks) {
-            log.debug(block.getClass().toString());
             block.pushBack(player);
         }
         //for (GameCharacter character : characters) {
