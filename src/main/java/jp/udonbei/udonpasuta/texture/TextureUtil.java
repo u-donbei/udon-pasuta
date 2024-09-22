@@ -32,6 +32,11 @@ public final class TextureUtil {
      * @return テクスチャファイル。ファイルが存在しない場合は{@link Optional#empty()}
      */
     public static Optional<Path> getTexture(String name) {
+        //パフォーマンス向上のため、nameがnullの場合は無条件でOptional.empty()を返す
+        if (name == null) {
+            return Optional.empty();
+        }
+
         Path base = Paths.get(PathConstants.TEXTURES.getPath());
         Path png = Paths.get(base.toString(), name + ".png");
         Path jpg = Paths.get(base.toString(), name + ".jpg");
@@ -60,7 +65,7 @@ public final class TextureUtil {
 
         if (path.isEmpty()) {
             LOGGER.error("Texture {} not found.", name);
-            throw new IllegalStateException("Texture udon not found.");
+            throw new IllegalStateException("Texture" + name + " not found.");
         }
         return path.get();
     }
