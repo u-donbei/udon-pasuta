@@ -95,16 +95,18 @@ jlink {
 
     jpackage {
         mainClass = 'jp.udonbei.udonpasuta.Main'
-        appVersion = '0.1.0'
+        appVersion = '0.1.1'
         jvmArgs.add('-Dcom.sun.management.jmxremote');
         installerName = 'うどんべいのパスタ退治'
         installerType = 'msi'
         imageOptions = [
-                '--input', 'input'
+                '--input', 'input',
         ]
         installerOptions = [
                 '--install-dir', '\\udon-pasuta',
+                '--about-url', 'https://github.com/u-donbei/udon-pasuta',
                 '--copyright', 'CopyRight (c) 2024 u-donbei.',
+                '--description', 'うどんべいのパスタ退治のゲーム',
                 '--vendor', 'u-donbei',
                 '--license-file', 'LICENSE',
                 '--win-dir-chooser',
@@ -112,7 +114,9 @@ jlink {
                 '--win-per-user-install',
                 '--win-shortcut',
                 '--win-shortcut-prompt',
-                '--win-upgrade-uuid', 'f6f4a8e1-ccd6-4fb6-9029-deac82e257fb'
+                '--win-update-url', 'https://github.com/u-donbei/udon-pasuta/releases',
+                '--win-upgrade-uuid', 'f6f4a8e1-ccd6-4fb6-9029-deac82e257fb',
+                '--win-help-url', 'https://github.com/u-donbei/udon-pasuta/issues'
         ]
     }
 }
