@@ -74,6 +74,6 @@ public class GameMap {
      */
     public void setBlock(Block block) {
         blocks[(int) block.getX() / Block.DEFAULT_WIDTH][(int) block.getY() / Block.DEFAULT_HEIGHT] = block;
-        block.updateView();
+        block.synchronize();
     }
 }

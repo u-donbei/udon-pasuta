@@ -41,7 +41,7 @@ public abstract class Block extends GameObject {
         if (!isContact(target)) {
             return Optional.empty();
         }
-        Bounds bounds = getView().getBoundsInParent(), targetBounds = target.getView().getBoundsInParent();
+        Bounds bounds = getHitRect().getBoundsInParent(), targetBounds = target.getHitRect().getBoundsInParent();
 
         double top = (bounds.getMinY() - targetBounds.getMaxY());
         double bottom = (bounds.getMaxY() - targetBounds.getMinY());
@@ -51,16 +51,16 @@ public abstract class Block extends GameObject {
 
         boolean isLeftObject = GENERATED_INSTANCES.stream()
                 .filter(GameObject::isContactable)
-                .anyMatch(t -> t.getView().getBoundsInParent().contains(getX() - 1, getY()));
+                .anyMatch(t -> t.getHitRect().getBoundsInParent().contains(getX() - 1, getY()));
         boolean isRightObject = GENERATED_INSTANCES.stream()
                 .filter(GameObject::isContactable)
-                .anyMatch(t -> t.getView().getBoundsInParent().contains(getX() + Block.DEFAULT_WIDTH + 1, getY()));
+                .anyMatch(t -> t.getHitRect().getBoundsInParent().contains(getX() + Block.DEFAULT_WIDTH + 1, getY()));
         boolean isTopObject = GENERATED_INSTANCES.stream()
                 .filter(GameObject::isContactable)
-                .anyMatch(t -> t.getView().getBoundsInParent().contains(getX(), getY() - 1));
+                .anyMatch(t -> t.getHitRect().getBoundsInParent().contains(getX(), getY() - 1));
         boolean isBottomObject = GENERATED_INSTANCES.stream()
                 .filter(GameObject::isContactable)
-                .anyMatch(t -> t.getView().getBoundsInParent().contains(getX(), getY() + Block.DEFAULT_HEIGHT + 1));
+                .anyMatch(t -> t.getHitRect().getBoundsInParent().contains(getX(), getY() + Block.DEFAULT_HEIGHT + 1));
 
         //変数名 != (-)1は接触で動けなくなるのを防いでいる
         if (top < 0 && top > -5 && top != -1 && !isTopObject) {

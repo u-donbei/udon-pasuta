@@ -30,7 +30,6 @@ public final class GameLoopManager {
     private static boolean isUp, isDown, isLeft, isRight, isShift;
     private static final double SCREEN_W = 800;
     private static final double SCREEN_H = 400;
-    private static double udonDiffX, udonDiffY;
     private static long beforeTime;
 
     /**
@@ -52,11 +51,10 @@ public final class GameLoopManager {
     private static void gameLoopImpl(MainPane gamePane, long now) {
         movePlayer();
         pushBack(gamePane.getGameMap(), gamePane.getCharacters());
-        initPlayerPosDiff();
         scroll(gamePane);
         animation(now);
 
-        player.updateView();
+        player.synchronize();
     }
 
     private static void init(MainPane gamePane) {
@@ -94,6 +92,8 @@ public final class GameLoopManager {
      * @param pane スクロールするMainPane
      */
     private static void scroll(MainPane pane) {
+        double udonDiffX = player.getDiffX();
+        double udonDiffY = player.getDiffY();
         if (player.getX() >= SCREEN_W / 2 - udonDiffX
             && player.getX() < Block.DEFAULT_WIDTH * GameMap.MAP_W - SCREEN_W / 2) {
             pane.getCamera().setTranslateX(pane.getCamera().getTranslateX() - udonDiffX);
@@ -146,7 +146,6 @@ public final class GameLoopManager {
 
     /**
      * キャラクターを押し戻す。
-     * 押し戻したかどうかに応じてスクロールを停止します。
      *
      * @param blocks 押し戻すブロックが入った配列
      * @param characters 押し戻す対象のキャラクター
@@ -160,7 +159,7 @@ public final class GameLoopManager {
         blocks = blocks.stream()
                 .filter(block -> {
                     Bounds bounds = rect.getBoundsInParent();
-                    return bounds.contains(block.getView().getBoundsInParent());
+                    return bounds.contains(block.getHitRect().getBoundsInParent());
                 })
                 .toList();
         for (Block block : blocks) {
@@ -172,15 +171,6 @@ public final class GameLoopManager {
         for (GameCharacter character : characters) {
             character.pushBack(player);
         }
-    }
-
-    /**
-     * プレイヤーの座標の差分を設定する。
-     */
-    private static void initPlayerPosDiff() {
-        //getX()やgetY()とgetView().getTranslateX()やgetView().getTranslateY()の差分を利用する
-        udonDiffX = player.getView().getTranslateX() - player.getX();
-        udonDiffY = player.getView().getTranslateY() - player.getY();
     }
 
     /**

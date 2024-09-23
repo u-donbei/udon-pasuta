@@ -16,9 +16,6 @@ import jp.udonbei.udonpasuta.object.block.Block;
 import org.junit.jupiter.api.Test;
 import org.testfx.framework.junit5.ApplicationTest;
 
-import java.util.List;
-import java.util.Set;
-
 import static org.junit.jupiter.api.Assertions.assertSame;
 
 public class GameObjectTest extends ApplicationTest {
@@ -28,7 +25,7 @@ public class GameObjectTest extends ApplicationTest {
         for (int i = 0; i < 3; i++) {
             GameObject object = new TestObject();
             object.setX(i * Block.DEFAULT_WIDTH);
-            object.updateView();
+            object.synchronize();
             pane.getChildren().add(object.getView());
         }
         pane.setId("root-pane");

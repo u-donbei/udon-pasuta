@@ -11,15 +11,14 @@ package jp.udonbei.udonpasuta.object;
 import javafx.geometry.Bounds;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import jp.udonbei.udonpasuta.object.block.Block;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Rectangle;
 import jp.udonbei.udonpasuta.object.character.GameCharacter;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 
 import java.net.MalformedURLException;
 import java.nio.file.Path;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Optional;
 
 /**
@@ -29,13 +28,16 @@ import java.util.Optional;
 @Data
 public abstract class GameObject implements HasTexture {
     private double x, y;
+    private double beforeX, beforeY;
     private Image image;
     private transient ImageView view;
+    private transient Rectangle hitRect;
     private boolean contactable;
 
     /**
      * コンストラクタ。
-     * 画像を初期化する。
+     * 画像を初期化します。
+     * 当たり判定の長方形の大きさは画像と等しくなるよう設定されます。
      *
      * @param image 表示する画像
      */
@@ -43,19 +45,80 @@ public abstract class GameObject implements HasTexture {
         try {
             setImage(new Image(image.toUri().toURL().toExternalForm()));
             view = new ImageView(getImage());
+            hitRect = new Rectangle(getImage().getWidth(), getImage().getHeight());
+            hitRect.setFill(Color.TRANSPARENT);
         } catch (MalformedURLException e) {
             log.error("An fatal error occurred:", e);
         }
     }
 
     /**
+     * コンストラクタ。
+     * 画像を初期化する。
+     *
+     * @param image 表示する画像
+     * @param width 当たり判定の長方形の幅
+     * @param height 当たり判定の長方形の高さ
+     */
+    public GameObject(Path image, double width, double height) {
+        try {
+            setImage(new Image(image.toUri().toURL().toExternalForm()));
+            view = new ImageView(getImage());
+            hitRect = new Rectangle(width, height);
+            hitRect.setFill(Color.TRANSPARENT);
+        } catch (MalformedURLException e) {
+            log.error("An fatal error occurred:", e);
+        }
+    }
+
+    /**
+     * X座標を設定する。
+     * 当たり判定の長方形の座標も設定します。
+     * @param x X座標
+     */
+    public void setX(double x) {
+        this.x = x;
+        getHitRect().setTranslateX(x);
+    }
+
+    /**
+     * Y座標を設定する。
+     * 当たり判定の長方形の座標も設定します。
+     * @param y Y座標
+     */
+    public void setY(double y) {
+        this.y = y;
+        getHitRect().setTranslateY(y);
+    }
+
+    /**
      * 座標と表示を同期する。
      * {@link #image}と{@link #view}も同期します。
      */
-    public void updateView() {
+    public void synchronize() {
         view.setImage(image);
         view.setTranslateX(getX());
         view.setTranslateY(getY());
+        beforeX = x;
+        beforeY = y;
+    }
+
+    /**
+     * 移動した差分を取得する。
+     * {@link #synchronize()}を実行後に実行すると<b>必ず0が返る</b>ので注意してください。
+     * @return X座標の差分
+     */
+    public double getDiffX() {
+        return beforeX - x;
+    }
+
+    /**
+     * 移動した差分を取得する。
+     * {@link #synchronize()}を実行後に実行すると<b>必ず0が返る</b>ので注意してください。
+     * @return Y座標の差分
+     */
+    public double getDiffY() {
+        return beforeY - y;
     }
 
     /**
@@ -79,7 +142,7 @@ public abstract class GameObject implements HasTexture {
         if (!isContact(target)) {
             return Optional.empty();
         }
-        Bounds bounds = getView().getBoundsInParent(), targetBounds = target.getView().getBoundsInParent();
+        Bounds bounds = getHitRect().getBoundsInParent(), targetBounds = target.getHitRect().getBoundsInParent();
 
         double top = (bounds.getMinY() - targetBounds.getMaxY());
         double bottom = (bounds.getMaxY() - targetBounds.getMinY());

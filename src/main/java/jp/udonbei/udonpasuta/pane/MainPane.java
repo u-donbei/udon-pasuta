@@ -88,7 +88,7 @@ public class MainPane extends AnchorPane {
     public void addCharacter(GameCharacter character) {
         gamePane.getChildren().add(character.getView());
         characters.add(character);
-        character.updateView();
+        character.synchronize();
     }
 
     /**
