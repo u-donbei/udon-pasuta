@@ -1,7 +1,0 @@
-2024/09/13 20:10:37.46 j.u.u.Main                     INFO  [main                                              ] - Application Start.
-2024/09/13 20:10:37.46 j.u.u.Main                     INFO  [main                                              ] - Setting develop environment.
-2024/09/13 20:10:37.46 j.u.u.Main                     INFO  [main                                              ] - Using develop environment.
-2024/09/13 20:10:37.50 j.u.u.Main                     DEBUG [JavaFX Application Thread                         ] - debug test
-2024/09/13 20:10:37.50 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Loading FXML.
-2024/09/13 20:10:41.36 j.u.u.Main                     INFO  [JavaFX Application Thread                         ] - Waiting start.
-2024/09/13 20:13:00.26 j.u.u.Main                     INFO  [main                                              ] - Application Exit.

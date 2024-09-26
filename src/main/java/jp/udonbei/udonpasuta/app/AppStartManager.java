@@ -6,7 +6,7 @@
  * see https://www.eclipse.org/legal/epl-2.0/
  */
 
-package jp.udonbei.udonpasuta.managers;
+package jp.udonbei.udonpasuta.app;
 
 import javafx.concurrent.Service;
 import javafx.concurrent.Task;
@@ -16,9 +16,9 @@ import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.paint.Color;
-import javafx.scene.text.Font;
 import javafx.stage.Stage;
 import jp.udonbei.udonpasuta.font.FontUtil;
+import jp.udonbei.udonpasuta.gameloop.GameLoopManager;
 import jp.udonbei.udonpasuta.map.GameMap;
 import jp.udonbei.udonpasuta.pane.MainPane;
 import org.slf4j.Logger;

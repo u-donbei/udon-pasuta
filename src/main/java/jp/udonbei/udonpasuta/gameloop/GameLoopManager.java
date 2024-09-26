@@ -6,7 +6,7 @@
  * see https://www.eclipse.org/legal/epl-2.0/
  */
 
-package jp.udonbei.udonpasuta.managers;
+package jp.udonbei.udonpasuta.gameloop;
 
 import javafx.animation.AnimationTimer;
 import javafx.geometry.Bounds;
@@ -160,6 +160,12 @@ public final class GameLoopManager {
                 .filter(block -> {
                     Bounds bounds = rect.getBoundsInParent();
                     return bounds.contains(block.getHitRect().getBoundsInParent());
+                })
+                .toList();
+        characters = characters.stream()
+                .filter(character -> {
+                    Bounds bounds = rect.getBoundsInParent();
+                    return bounds.contains(character.getHitRect().getBoundsInParent());
                 })
                 .toList();
         for (Block block : blocks) {
