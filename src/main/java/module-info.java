@@ -1,6 +1,7 @@
 module jp.udonbei.udonpasuta {
     requires javafx.controls;
     requires javafx.fxml;
+    requires javafx.media;
     requires lombok;
     requires ch.qos.logback.classic;
     requires ch.qos.logback.core;
