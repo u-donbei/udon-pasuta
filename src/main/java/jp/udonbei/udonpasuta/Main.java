@@ -10,7 +10,6 @@ package jp.udonbei.udonpasuta;
 
 import ch.qos.logback.classic.LoggerContext;
 import ch.qos.logback.classic.joran.JoranConfigurator;
-import ch.qos.logback.classic.util.ContextInitializer;
 import ch.qos.logback.core.joran.spi.JoranException;
 import javafx.application.Application;
 import javafx.application.Platform;
@@ -19,7 +18,7 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
-import jp.udonbei.udonpasuta.managers.AppStartManager;
+import jp.udonbei.udonpasuta.app.AppStartManager;
 import jp.udonbei.udonpasuta.path.PathConstants;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

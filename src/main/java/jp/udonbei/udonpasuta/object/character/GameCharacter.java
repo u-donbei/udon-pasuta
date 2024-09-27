@@ -34,6 +34,7 @@ public abstract class GameCharacter extends GameObject implements Movable {
      */
     public GameCharacter(Path image) {
         super(image);
+        setContactable(true);
     }
 
     @Override

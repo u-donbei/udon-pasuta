@@ -22,7 +22,7 @@ import javafx.scene.layout.BackgroundRepeat;
 import javafx.scene.layout.BackgroundSize;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.text.Font;
-import jp.udonbei.udonpasuta.managers.AppStartManager;
+import jp.udonbei.udonpasuta.app.AppStartManager;
 
 import java.net.URL;
 import java.util.ResourceBundle;
