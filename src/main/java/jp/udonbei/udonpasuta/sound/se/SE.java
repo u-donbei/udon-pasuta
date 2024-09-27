@@ -56,4 +56,12 @@ public final class SE {
         }
         return false;
     }
+
+    /**
+     * 音量を設定する。
+     * @param volume 音量
+     */
+    public void setVolume(int volume) {
+        player.setVolume((double) volume / 100);
+    }
 }
