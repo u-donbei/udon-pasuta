@@ -6,20 +6,19 @@
  * see https://www.eclipse.org/legal/epl-2.0/
  */
 
-package jp.udonbei.udonpasuta.sound.se;
+package jp.udonbei.udonpasuta.sound.bgm;
 
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import lombok.Data;
 
 import java.nio.file.Path;
-import java.util.Objects;
 
 /**
  * 一つのSEを表す。
  */
 @Data
-public final class SE {
+public final class BGM {
     private final Path soundFile;
     private final Media media;
     private final MediaPlayer player;
@@ -29,7 +28,7 @@ public final class SE {
      * コンストラクタ。
      * @param soundFile 音のファイル。mp3は確実に使用できます。
      */
-    public SE(Path soundFile) {
+    public BGM(Path soundFile) {
         this.soundFile = soundFile;
         this.media = new Media(soundFile.toUri().toString());
         player = new MediaPlayer(media);
