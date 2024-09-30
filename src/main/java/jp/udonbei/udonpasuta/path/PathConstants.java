@@ -8,7 +8,9 @@
 
 package jp.udonbei.udonpasuta.path;
 
+import jp.udonbei.udonpasuta.Main;
 import lombok.Getter;
+import lombok.extern.slf4j.Slf4j;
 
 import java.io.File;
 import java.net.URI;
@@ -16,9 +18,11 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 @Getter
+@Slf4j
 public enum PathConstants {
     APP_HOME(System.getenv("LOCALAPPDATA") + "\\udon-pasuta\\app\\"),
-    TEXTURES(APP_HOME + "textures\\");
+    TEXTURES(APP_HOME + "textures\\"),
+    BGM(APP_HOME + "se\\");
     private String path;
 
     PathConstants(String path) {
@@ -40,5 +44,10 @@ public enum PathConstants {
     @Override
     public String toString() {
         return path;
+    }
+    public static void update() {
+        APP_HOME.path = Main.isDevelop() ? "input\\" : System.getenv("LOCALAPPDATA") + "\\udon-pasuta\\app\\";
+        TEXTURES.path = APP_HOME + "textures\\";
+        BGM.path = APP_HOME + "se\\" ;
     }
 }

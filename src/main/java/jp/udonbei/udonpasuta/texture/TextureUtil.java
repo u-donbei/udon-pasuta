@@ -37,7 +37,8 @@ public final class TextureUtil {
             return Optional.empty();
         }
 
-        Path base = Paths.get(PathConstants.TEXTURES.getPath());
+        Path base = PathConstants.TEXTURES.toPath();
+        base = base.toAbsolutePath();
         Path png = Paths.get(base.toString(), name + ".png");
         Path jpg = Paths.get(base.toString(), name + ".jpg");
 
