@@ -27,6 +27,7 @@ import java.io.IOException;
 
 public class Main extends Application {
     private static final Logger LOGGER = LoggerFactory.getLogger(Main.class);
+    private static boolean IS_DEVELOP;
     private static int exitCode = 0;
 
     public static void main(String[] args) {
@@ -41,12 +42,14 @@ public class Main extends Application {
             if (develop.equals("--develop")) {
                 LOGGER.info("Using develop environment.");
                 System.setProperty("udon.develop", "true");
+                IS_DEVELOP = true;
                 System.setProperty("udon.log.level", "debug");
             } else {
                 production();
             }
         }
         updateLogbackConfigure();
+        PathConstants.update();
         launch(args);
         LOGGER.info("Application Exit.");
         System.exit(exitCode);
@@ -69,6 +72,10 @@ public class Main extends Application {
         } catch (JoranException e) {
             LOGGER.error("An Logback configure failed", e);
         }
+    }
+
+    public static boolean isDevelop() {
+        return IS_DEVELOP;
     }
 
     @Override
