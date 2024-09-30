@@ -21,6 +21,7 @@ import jp.udonbei.udonpasuta.font.FontUtil;
 import jp.udonbei.udonpasuta.gameloop.GameLoopManager;
 import jp.udonbei.udonpasuta.map.GameMap;
 import jp.udonbei.udonpasuta.pane.MainPane;
+import jp.udonbei.udonpasuta.sound.bgm.BGMConstants;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -101,6 +102,10 @@ public final class AppStartManager {
         Scene scene = new Scene(pane, 800, 500);
         scene.getStylesheets().add(AppStartManager.class.getResource("/css/style.css").toExternalForm());
         mainWindow.setScene(scene);
+
+        BGMConstants.FIELD.getSE().setVolume(40);
+        BGMConstants.FIELD.getSE().play();
+        LOGGER.info("playing SE.");
 
         GameLoopManager.gameLoop(pane);
 
