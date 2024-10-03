@@ -22,7 +22,7 @@ import java.nio.file.Paths;
 public enum PathConstants {
     APP_HOME(System.getenv("LOCALAPPDATA") + "\\udon-pasuta\\app\\"),
     TEXTURES(APP_HOME + "textures\\"),
-    BGM(APP_HOME + "se\\");
+    BGM(APP_HOME + "bgm\\");
     private String path;
 
     PathConstants(String path) {
@@ -48,6 +48,6 @@ public enum PathConstants {
     public static void update() {
         APP_HOME.path = Main.isDevelop() ? "input\\" : System.getenv("LOCALAPPDATA") + "\\udon-pasuta\\app\\";
         TEXTURES.path = APP_HOME + "textures\\";
-        BGM.path = APP_HOME + "se\\" ;
+        BGM.path = APP_HOME + "bgm\\" ;
     }
 }
