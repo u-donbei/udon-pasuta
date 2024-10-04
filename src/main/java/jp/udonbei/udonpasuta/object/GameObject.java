@@ -151,16 +151,16 @@ public abstract class GameObject implements HasTexture {
         double right = (bounds.getMaxX() - targetBounds.getMinX());
 
         //変数名 != (-)1は接触で動けなくなるのを防いでいる
-        if (top < 0 && top > -5 && top != -1) {
+        if (top < 0 && top > -10 && top != -1) {
             target.moveY(top);
             return Optional.of(PushBackDirection.TOP);
-        } else if (left < 0 && left > -5 && left != -1) {
+        } else if (left < 0 && left > -10 && left != -1) {
             target.moveX(left);
             return Optional.of(PushBackDirection.LEFT);
-        } else if (bottom > 0 && bottom < 5 && bottom != 1) {
+        } else if (bottom > 0 && bottom < 10 && bottom != 1) {
             target.moveY(bottom);
             return Optional.of(PushBackDirection.BOTTOM);
-        } else if (right > 0 && right < 5 && bottom != 1) {
+        } else if (right > 0 && right < 10 && bottom != 1) {
             target.moveX(right);
             return Optional.of(PushBackDirection.RIGHT);
         }

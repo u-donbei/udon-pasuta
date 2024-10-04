@@ -63,16 +63,16 @@ public abstract class Block extends GameObject {
                 .anyMatch(t -> t.getHitRect().getBoundsInParent().contains(getX(), getY() + Block.DEFAULT_HEIGHT + 1));
 
         //変数名 != (-)1は接触で動けなくなるのを防いでいる
-        if (top < 0 && top > -5 && top != -1 && !isTopObject) {
+        if (top < 0 && top > -10 && top != -1 && !isTopObject) {
             target.moveY(top);
             return Optional.of(PushBackDirection.TOP);
-        } else if (left < 0 && left > -5 && left != -1 && !isLeftObject) {
+        } else if (left < 0 && left > -10 && left != -1 && !isLeftObject) {
             target.moveX(left);
             return Optional.of(PushBackDirection.LEFT);
-        } else if (bottom > 0 && bottom < 5 && bottom != 1 && !isBottomObject) {
+        } else if (bottom > 0 && bottom < 10 && bottom != 1 && !isBottomObject) {
             target.moveY(bottom);
             return Optional.of(PushBackDirection.BOTTOM);
-        } else if (right > 0 && right < 5 && bottom != 1 && !isRightObject) {
+        } else if (right > 0 && right < 10 && bottom != 1 && !isRightObject) {
             target.moveX(right);
             return Optional.of(PushBackDirection.RIGHT);
         }
