@@ -20,7 +20,7 @@ public enum BGMConstants {
         this.se = se;
     }
 
-    public BGM getSE() {
+    public BGM getBGM() {
         return se;
     }
 }

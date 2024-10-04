@@ -34,6 +34,7 @@ public final class BGM {
         player = new MediaPlayer(media);
         player.setOnEndOfMedia(() -> endOfMedia = true);
         player.setOnStopped(() -> endOfMedia = true);
+        player.setCycleCount(MediaPlayer.INDEFINITE);
     }
 
     /**
@@ -54,6 +55,13 @@ public final class BGM {
             return true;
         }
         return false;
+    }
+
+    /**
+     * 音を一時停止する。
+     */
+    public void pause() {
+        player.pause();
     }
 
     /**

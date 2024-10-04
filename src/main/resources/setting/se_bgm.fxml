@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<!--
+  ~ Copyright (c) 2024 u-donbei
+  ~
+  ~ Released under the EPL license.
+  ~
+  ~ see https://www.eclipse.org/legal/epl-2.0/
+  -->
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#onKeyPressed" prefHeight="400.0" prefWidth="600.0" styleClass="root-pane" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jp.udonbei.udonpasuta.controller.SEAndBGMController">
+   <top>
+      <VBox alignment="CENTER">
+         <Button fx:id="backTo" onAction="#onBackToHandle" text="戻る" />
+         <Label fx:id="title" text="SE・BGM設定" BorderPane.alignment="CENTER" />
+      </VBox>
+   </top>
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <Label fx:id="bgmLabel" text="BGMの音量(50)" />
+         <Slider fx:id="bgm" minorTickCount="4" showTickLabels="true" showTickMarks="true" value="50.0" />
+         <Label fx:id="seLabel" text="SE(効果音)の音量(80)" />
+         <Slider fx:id="se" minorTickCount="4" showTickLabels="true" showTickMarks="true" value="80.0" />
+      </VBox>
+   </center>
+</BorderPane>

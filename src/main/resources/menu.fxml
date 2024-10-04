@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<!--
+  ~ Copyright (c) 2024 u-donbei
+  ~
+  ~ Released under the EPL license.
+  ~
+  ~ see https://www.eclipse.org/legal/epl-2.0/
+  -->
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="root-pane" stylesheets="@css/style.css" onKeyPressed="#onKeyPressed" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jp.udonbei.udonpasuta.controller.MenuController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="back" mnemonicParsing="false" text="戻る" onAction="#onBackHandle"/>
+            <Button fx:id="setting" alignment="CENTER" mnemonicParsing="false" text="設定" onAction="#onSettingHandle"/>
+            <Button fx:id="saveAndExit" mnemonicParsing="false" text="セーブ&amp;終了" onAction="#onExitHandle"/>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <Label fx:id="title" text="メニュー" BorderPane.alignment="CENTER" />
+   </top>
+</BorderPane>

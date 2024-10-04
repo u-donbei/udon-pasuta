@@ -30,7 +30,7 @@ public class GameObjectTest extends ApplicationTest {
         }
         pane.setId("root-pane");
 
-        Scene scene = new Scene(pane, 800, 600);
+        Scene scene = new Scene(pane, 800, 500);
         stage.setScene(scene);
         stage.show();
     }

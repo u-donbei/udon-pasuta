@@ -18,3 +18,37 @@
     -fx-border-image-width: 13;
     -fx-border-image-repeat: stretch;
 }
+
+.button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-border-color: white;
+}
+
+.button:focused {
+    -fx-text-fill: lightgray;
+    -fx-border-color: lightgray;
+}
+
+.button:armed {
+    -fx-text-fill: darkgray;
+    -fx-border-color: darkgray;
+}
+
+.label {
+    -fx-text-fill: white;
+}
+
+.root-pane {
+    -fx-background-color: black;
+    -fx-border-width: 2px;
+}
+
+.slider .track{
+    -fx-text-fill: white;
+    -fx-background-color: white;
+}
+
+.slider .thumb {
+    -fx-background-color: gray;
+}

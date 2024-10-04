@@ -9,16 +9,24 @@
 package jp.udonbei.udonpasuta.gameloop;
 
 import javafx.animation.AnimationTimer;
+import javafx.fxml.FXMLLoader;
 import javafx.geometry.Bounds;
+import javafx.scene.Scene;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.shape.Rectangle;
+import javafx.stage.Stage;
+import jp.udonbei.udonpasuta.controller.MenuController;
+import jp.udonbei.udonpasuta.controller.SettingController;
 import jp.udonbei.udonpasuta.map.GameMap;
 import jp.udonbei.udonpasuta.object.block.Block;
 import jp.udonbei.udonpasuta.object.character.GameCharacter;
 import jp.udonbei.udonpasuta.object.character.Onigiri;
 import jp.udonbei.udonpasuta.object.character.Udonbei;
 import jp.udonbei.udonpasuta.pane.MainPane;
+import jp.udonbei.udonpasuta.sound.bgm.BGMConstants;
 import lombok.extern.slf4j.Slf4j;
 
+import java.io.IOException;
 import java.util.List;
 
 /**
@@ -26,20 +34,25 @@ import java.util.List;
  */
 @Slf4j
 public final class GameLoopManager {
-    private static Udonbei player;
-    private static boolean isUp, isDown, isLeft, isRight, isShift;
     private static final double SCREEN_W = 800;
     private static final double SCREEN_H = 400;
+    private static Udonbei player;
+    private static boolean isUp, isDown, isLeft, isRight, isShift, isEsc;
     private static long beforeTime;
+    private static Scene menuScene, settingScene;
+    private static Stage mainWindow;
+    public static AnimationTimer timer;
 
     /**
      * ゲームループを行う。
      * 先に初期化を行います。
+     *
      * @param gamePane 生成したMainPane
      */
-    public static void gameLoop(MainPane gamePane) {
+    public static void gameLoop(MainPane gamePane, Stage mainWindow) throws IOException {
+        GameLoopManager.mainWindow = mainWindow;
         init(gamePane);
-        AnimationTimer timer = new AnimationTimer() {
+        timer = new AnimationTimer() {
             @Override
             public void handle(long now) {
                 gameLoopImpl(gamePane, now);
@@ -49,6 +62,7 @@ public final class GameLoopManager {
     }
 
     private static void gameLoopImpl(MainPane gamePane, long now) {
+        checkEscToMenu();
         movePlayer();
         pushBack(gamePane.getGameMap(), gamePane.getCharacters());
         scroll(gamePane);
@@ -57,10 +71,12 @@ public final class GameLoopManager {
         player.synchronize();
     }
 
-    private static void init(MainPane gamePane) {
+    private static void init(MainPane gamePane) throws IOException {
         player = new Udonbei();
+        //キャラクターの初期化
         gamePane.addCharacter(player);
         gamePane.addCharacter(new Onigiri());
+        //gamePaneの初期化
         gamePane.setOnKeyPressed(e -> {
             switch (e.getCode()) {
                 case W -> isUp = true;
@@ -68,6 +84,7 @@ public final class GameLoopManager {
                 case A -> isLeft = true;
                 case D -> isRight = true;
                 case SHIFT -> isShift = true;
+                case ESCAPE -> isEsc = true;
             }
         });
 
@@ -78,10 +95,27 @@ public final class GameLoopManager {
                 case A -> isLeft = false;
                 case D -> isRight = false;
                 case SHIFT -> isShift = false;
+                case ESCAPE -> isEsc = false;
             }
         });
 
         gamePane.requestFocus();
+
+        //メニューや設定画面の生成・初期化
+        FXMLLoader menuLoader = new FXMLLoader(GameLoopManager.class.getResource("/menu.fxml"));
+        BorderPane menuPane = menuLoader.load();
+        menuScene = new Scene(menuPane, 800, 500);
+        MenuController menuController = menuLoader.getController();
+
+        FXMLLoader settingLoader = new FXMLLoader(GameLoopManager.class.getResource("/setting.fxml"));
+        BorderPane settingPane = settingLoader.load();
+        settingScene = new Scene(settingPane, 800, 500);
+        SettingController settingController = settingLoader.getController();
+
+        menuController.guiInit(mainWindow, mainWindow.getScene(), settingScene);
+        settingController.guiInit(mainWindow, menuScene);
+        settingController.childPaneInit(settingScene);
+
         gamePane.getTextPanel().changeTextLittleByLittle("ミートソースが現れた!", 100, null, () -> {
         }, gamePane::requestFocus);
     }
@@ -89,6 +123,7 @@ public final class GameLoopManager {
     /**
      * うどんべいのX座標が400以上ならば横に、
      * Y座標が250以上ならば縦にスクロールを行う。
+     *
      * @param pane スクロールするMainPane
      */
     private static void scroll(MainPane pane) {
@@ -147,7 +182,7 @@ public final class GameLoopManager {
     /**
      * キャラクターを押し戻す。
      *
-     * @param blocks 押し戻すブロックが入った配列
+     * @param blocks     押し戻すブロックが入った配列
      * @param characters 押し戻す対象のキャラクター
      */
     private static void pushBack(List<Block> blocks, List<GameCharacter> characters) {
@@ -189,5 +224,18 @@ public final class GameLoopManager {
             player.nextTexture();
             beforeTime = now;
         }
+    }
+
+    /**
+     * ESCキーが押されたかチェックし、メニュー画面を表示する
+     */
+    private static void checkEscToMenu() {
+        if (!isEsc) {
+            return;
+        }
+        mainWindow.setScene(menuScene);
+        isEsc = false;      //Sceneが切り替わり、gamePaneのフォーカスが失われ、isEscがfalseにならなくなる問題の対処
+        timer.stop();
+        BGMConstants.FIELD.getBGM().pause();
     }
 }

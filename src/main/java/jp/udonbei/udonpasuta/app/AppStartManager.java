@@ -103,11 +103,15 @@ public final class AppStartManager {
         scene.getStylesheets().add(AppStartManager.class.getResource("/css/style.css").toExternalForm());
         mainWindow.setScene(scene);
 
-        BGMConstants.FIELD.getSE().setVolume(40);
-        BGMConstants.FIELD.getSE().play();
+        BGMConstants.FIELD.getBGM().setVolume(40);
+        BGMConstants.FIELD.getBGM().play();
         LOGGER.info("playing SE.");
 
-        GameLoopManager.gameLoop(pane);
+        try {
+            GameLoopManager.gameLoop(pane, mainWindow);
+        } catch (Exception e) {
+            LOGGER.error("Failed to start game. Check logs for details.", e);
+        }
 
     }
 }
