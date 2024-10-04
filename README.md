@@ -1,5 +1,5 @@
 ## udon-pasuta-develop
-Issue、プルリクエスト、フォークなどはご自由にどうぞ。
+バグを発見されましたら、Issuesでご報告お願いします。ご自身で修正可能な場合は、プルリクエストを送ってもらってもOKです。
 共同開発などしたい方はyu_w_main@yahoo.co.jpまでお願いします。
 
 ## ゲームの概要
@@ -47,7 +47,7 @@ Issue、プルリクエスト、フォークなどはご自由にどうぞ。
 
 『うどんべいのパスタ退治』の制作者
 u-donbei
-→メールアドレス:yu_w_main@yahoo.co.jp
+→https://github.com/u-donbei/udon-pasuta
 
 4. 本規約は予告なく変更する場合があります。
 
@@ -89,7 +89,7 @@ u-donbei
 
 ## クレジット（順不同）
 
-u-dpnbei（ゲーム制作/シナリオ/画像制作）
+u-donbei（ゲーム制作/シナリオ/画像制作）
 →メールアドレス:yu_w_main@yahoo.co.jp
 
 BGM・ジングル・効果音のフリー素材｜OtoLogic様(SE制作)
