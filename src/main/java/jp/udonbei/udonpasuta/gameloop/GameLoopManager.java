@@ -18,6 +18,8 @@ import javafx.stage.Stage;
 import jp.udonbei.udonpasuta.controller.MenuController;
 import jp.udonbei.udonpasuta.controller.SettingController;
 import jp.udonbei.udonpasuta.map.GameMap;
+import jp.udonbei.udonpasuta.object.AutomaticProcessable;
+import jp.udonbei.udonpasuta.object.GameObject;
 import jp.udonbei.udonpasuta.object.block.Block;
 import jp.udonbei.udonpasuta.object.character.GameCharacter;
 import jp.udonbei.udonpasuta.object.character.Onigiri;
@@ -64,11 +66,12 @@ public final class GameLoopManager {
     private static void gameLoopImpl(MainPane gamePane, long now) {
         checkEscToMenu();
         movePlayer();
+        gameLoopProcess(gamePane);
         pushBack(gamePane.getGameMap(), gamePane.getCharacters());
         scroll(gamePane);
         animation(now);
 
-        player.synchronize();
+        synchronize(gamePane.getCharacters());
     }
 
     private static void init(MainPane gamePane) throws IOException {
@@ -237,5 +240,16 @@ public final class GameLoopManager {
         isEsc = false;      //Sceneが切り替わり、gamePaneのフォーカスが失われ、isEscがfalseにならなくなる問題の対処
         timer.stop();
         BGMConstants.FIELD.getBGM().pause();
+    }
+
+    private static void gameLoopProcess(MainPane gamePane) {
+        gamePane.getCharacters().stream()
+                .filter(t -> t instanceof AutomaticProcessable)
+                .forEach(t -> ((AutomaticProcessable) t).handle());
+    }
+
+    private static void synchronize(List<GameCharacter> characters) {
+        player.synchronize();
+        characters.forEach(GameObject::synchronize);
     }
 }
