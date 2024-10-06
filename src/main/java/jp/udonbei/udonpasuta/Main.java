@@ -16,9 +16,13 @@ import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import jp.udonbei.udonpasuta.app.AppStartManager;
+import jp.udonbei.udonpasuta.controller.SettingController;
+import jp.udonbei.udonpasuta.controller.TitleController;
+import jp.udonbei.udonpasuta.gameloop.GameLoopManager;
 import jp.udonbei.udonpasuta.path.PathConstants;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -79,19 +83,32 @@ public class Main extends Application {
     }
 
     @Override
-    public void start(Stage stage) {
+    public void start(Stage stage) throws Exception {
         Pane main = null;
+        FXMLLoader titleLoader = new FXMLLoader(getClass().getResource("/title.fxml"));
         try {
             LOGGER.debug("debug test");
             LOGGER.info("Loading FXML.");
-            main = FXMLLoader.load(getClass().getResource("/title.fxml"));
+            main = titleLoader.load();
         } catch (IOException e) {
             LOGGER.error("FXML Load failed: ", e);
             exitCode = 1;
             Platform.exit();
         }
 
+        //設定画面の初期化
+        FXMLLoader settingLoader = new FXMLLoader(GameLoopManager.class.getResource("/setting.fxml"));
+        BorderPane settingPane = settingLoader.load();
+        Scene settingScene = new Scene(settingPane, 800, 500);
+        SettingController settingController = settingLoader.getController();
+
+        TitleController titleController = titleLoader.getController();
+        titleController.registerSetting(e -> stage.setScene(settingScene));
+
         Scene mainScene = new Scene(main);
+
+        settingController.guiInit(stage, mainScene);
+        settingController.childPaneInit(settingScene);
 
         stage.setScene(mainScene);
         stage.setTitle("うどんべいのパスタ退治");
@@ -99,6 +116,6 @@ public class Main extends Application {
         stage.show();
 
         LOGGER.info("Waiting start.");
-        AppStartManager.waitStart(stage);
+        AppStartManager.waitStart(stage, settingScene, settingController);
     }
 }

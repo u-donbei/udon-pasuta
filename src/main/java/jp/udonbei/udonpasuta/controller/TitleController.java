@@ -26,6 +26,7 @@ import jp.udonbei.udonpasuta.app.AppStartManager;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.function.Consumer;
 
 public class TitleController implements Initializable {
 
@@ -40,6 +41,8 @@ public class TitleController implements Initializable {
 
     @FXML
     private Button start;
+
+    private Consumer<ActionEvent> settingPressed;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -57,6 +60,10 @@ public class TitleController implements Initializable {
         exit.setFont(font);
     }
 
+    public void registerSetting(Consumer<ActionEvent> settingPressed) {
+        this.settingPressed = settingPressed;
+    }
+
     @FXML
     void handleExit(ActionEvent event) {
         Platform.exit();
@@ -64,7 +71,7 @@ public class TitleController implements Initializable {
 
     @FXML
     void handleSetting(ActionEvent event) {
-
+        settingPressed.accept(event);
     }
 
     @FXML

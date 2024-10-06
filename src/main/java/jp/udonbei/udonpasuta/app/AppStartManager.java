@@ -17,6 +17,7 @@ import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
+import jp.udonbei.udonpasuta.controller.SettingController;
 import jp.udonbei.udonpasuta.font.FontUtil;
 import jp.udonbei.udonpasuta.gameloop.GameLoopManager;
 import jp.udonbei.udonpasuta.map.GameMap;
@@ -31,6 +32,8 @@ import org.slf4j.LoggerFactory;
 public final class AppStartManager {
     private static final Logger LOGGER = LoggerFactory.getLogger(AppStartManager.class);
     private static Stage mainWindow;
+    private static Scene settingScene;
+    private static SettingController settingController;
     private static boolean isWaited;
     private static Scene beforeScene;
 
@@ -39,8 +42,11 @@ public final class AppStartManager {
      *
      * @param stage ボタンが押された時に描画するウィンドウ
      */
-    public static void waitStart(Stage stage) {
+    public static void waitStart(Stage stage, Scene settings, SettingController settingc) {
         mainWindow = stage;
+        settingScene = settings;
+        settingController = settingc;
+
         isWaited = true;
     }
 
@@ -108,7 +114,7 @@ public final class AppStartManager {
         LOGGER.info("playing SE.");
 
         try {
-            GameLoopManager.gameLoop(pane, mainWindow);
+            GameLoopManager.gameLoop(pane, mainWindow, settingScene, settingController);
         } catch (Exception e) {
             LOGGER.error("Failed to start game. Check logs for details.", e);
         }

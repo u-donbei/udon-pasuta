@@ -51,9 +51,9 @@ public final class GameLoopManager {
      *
      * @param gamePane 生成したMainPane
      */
-    public static void gameLoop(MainPane gamePane, Stage mainWindow) throws IOException {
+    public static void gameLoop(MainPane gamePane, Stage mainWindow, Scene settingScene, SettingController settingController) throws IOException {
         GameLoopManager.mainWindow = mainWindow;
-        init(gamePane);
+        init(gamePane, settingScene, settingController);
         timer = new AnimationTimer() {
             @Override
             public void handle(long now) {
@@ -74,7 +74,7 @@ public final class GameLoopManager {
         synchronize(gamePane.getCharacters());
     }
 
-    private static void init(MainPane gamePane) throws IOException {
+    private static void init(MainPane gamePane, Scene settingScene, SettingController settingController) throws IOException {
         player = new Udonbei();
         //キャラクターの初期化
         gamePane.addCharacter(player);
@@ -110,10 +110,7 @@ public final class GameLoopManager {
         menuScene = new Scene(menuPane, 800, 500);
         MenuController menuController = menuLoader.getController();
 
-        FXMLLoader settingLoader = new FXMLLoader(GameLoopManager.class.getResource("/setting.fxml"));
-        BorderPane settingPane = settingLoader.load();
-        settingScene = new Scene(settingPane, 800, 500);
-        SettingController settingController = settingLoader.getController();
+        GameLoopManager.settingScene = settingScene;
 
         menuController.guiInit(mainWindow, mainWindow.getScene(), settingScene);
         settingController.guiInit(mainWindow, menuScene);
