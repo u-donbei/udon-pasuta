@@ -23,6 +23,7 @@ public final class BGM {
     private final Media media;
     private final MediaPlayer player;
     private boolean endOfMedia;
+    private int volume;
 
     /**
      * コンストラクタ。
@@ -42,6 +43,7 @@ public final class BGM {
      */
     public void play() {
         endOfMedia = false;
+        player.setVolume(volume);
         player.play();
     }
 
@@ -70,5 +72,6 @@ public final class BGM {
      */
     public void setVolume(int volume) {
         player.setVolume((double) volume / 100);
+        this.volume = volume / 100;
     }
 }
