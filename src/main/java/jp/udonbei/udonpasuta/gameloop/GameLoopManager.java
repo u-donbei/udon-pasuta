@@ -17,6 +17,8 @@ import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 import jp.udonbei.udonpasuta.controller.MenuController;
 import jp.udonbei.udonpasuta.controller.SettingController;
+import jp.udonbei.udonpasuta.event.Event;
+import jp.udonbei.udonpasuta.event.EventManager;
 import jp.udonbei.udonpasuta.map.GameMap;
 import jp.udonbei.udonpasuta.object.AutomaticProcessable;
 import jp.udonbei.udonpasuta.object.GameObject;
@@ -29,6 +31,7 @@ import jp.udonbei.udonpasuta.sound.bgm.BGMConstants;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -43,6 +46,7 @@ public final class GameLoopManager {
     private static long beforeTime;
     private static Scene menuScene, settingScene;
     private static Stage mainWindow;
+    private static EventManager eventManager;
     public static AnimationTimer timer;
 
     /**
@@ -67,6 +71,7 @@ public final class GameLoopManager {
         checkEscToMenu();
         movePlayer();
         gameLoopProcess(gamePane);
+        eventManager.runEvents(player, gamePane.getTextPanel());
         pushBack(gamePane.getGameMap(), gamePane.getCharacters());
         scroll(gamePane);
         animation(now);
@@ -103,6 +108,9 @@ public final class GameLoopManager {
         });
 
         gamePane.requestFocus();
+
+        //イベントマネージャを初期化
+        eventManager = new EventManager();
 
         //メニューや設定画面の生成・初期化
         FXMLLoader menuLoader = new FXMLLoader(GameLoopManager.class.getResource("/menu.fxml"));
@@ -239,12 +247,20 @@ public final class GameLoopManager {
         BGMConstants.FIELD.getBGM().pause();
     }
 
+    /**
+     * ゲームループに合わせて行う処理を行う。
+     * @param gamePane 表示されているMainPane
+     */
     private static void gameLoopProcess(MainPane gamePane) {
         gamePane.getCharacters().stream()
                 .filter(t -> t instanceof AutomaticProcessable)
                 .forEach(t -> ((AutomaticProcessable) t).handle());
     }
 
+    /**
+     * プレイヤーとキャラクターの座標と表示を同期する。
+     * @param characters 処理するキャラクターが入ったリスト
+     */
     private static void synchronize(List<GameCharacter> characters) {
         player.synchronize();
         characters.forEach(GameObject::synchronize);
